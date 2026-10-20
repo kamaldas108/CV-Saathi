@@ -1,0 +1,15 @@
+# secrets
+.env
+*.env.local
+credentials/
+*service-account*.json
+*-sa.json
+
+# local data (usage logs, future drafts)
+data/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

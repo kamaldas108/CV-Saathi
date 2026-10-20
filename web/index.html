@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1f3a5f">
+  <title>CV-Saathi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CV-Saathi</div>
+    <span id="modeBadge" class="badge" hidden></span>
+  </header>
+
+  <!-- Consent: shown before anything is recorded -->
+  <main id="consent" class="screen">
+    <h1>Make your CV by talking</h1>
+    <p class="lead">Answer a few questions in English, ಕನ್ನಡ or हिंदी. In about 10 minutes you get a one-page English CV as a PDF.</p>
+    <section class="notice" lang="en">
+      <h2>What we record</h2>
+      <ul>
+        <li>Your voice goes to Google's Gemini AI to understand you. The recording is not saved.</li>
+        <li>Gemini processes your voice on Google servers in the USA, and writes your draft CV on Google servers that may be in other countries outside India.</li>
+        <li>We save the written conversation and your CV details until you close or start over, and never more than 7 days.</li>
+        <li>We never ask for caste, religion, Aadhaar, marital status or date of birth.</li>
+        <li>Nothing is shared unless you download or share it yourself.</li>
+      </ul>
+    </section>
+    <details class="notice">
+      <summary lang="hi">हिंदी में पढ़ें</summary>
+      <ul lang="hi">
+        <li>आपकी आवाज़ समझने के लिए Google के Gemini AI को भेजी जाती है। रिकॉर्डिंग सेव नहीं होती।</li>
+        <li>Gemini आपकी आवाज़ को अमेरिका (USA) में Google के सर्वर पर प्रोसेस करता है, और आपका ड्राफ़्ट CV Google के ऐसे सर्वर पर लिखता है जो भारत के बाहर दूसरे देशों में हो सकते हैं।</li>
+        <li>लिखी हुई बातचीत और CV की जानकारी तब तक रखी जाती है जब तक आप बंद न करें या दोबारा शुरू न करें, 7 दिन से ज़्यादा नहीं।</li>
+        <li>हम जाति, धर्म, आधार, वैवाहिक स्थिति या जन्म तिथि कभी नहीं पूछते।</li>
+        <li>आप खुद डाउनलोड या शेयर न करें तो कुछ भी शेयर नहीं होता।</li>
+      </ul>
+    </details>
+    <details class="notice">
+      <summary lang="kn">ಕನ್ನಡದಲ್ಲಿ ಓದಿ</summary>
+      <ul lang="kn">
+        <li>ನಿಮ್ಮ ಧ್ವನಿಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು Google ನ Gemini AI ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. ರೆಕಾರ್ಡಿಂಗ್ ಉಳಿಸುವುದಿಲ್ಲ.</li>
+        <li>Gemini ನಿಮ್ಮ ಧ್ವನಿಯನ್ನು ಅಮೆರಿಕದ (USA) Google ಸರ್ವರ್‌ಗಳಲ್ಲಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತದೆ, ಮತ್ತು ನಿಮ್ಮ ಡ್ರಾಫ್ಟ್ CV ಅನ್ನು ಭಾರತದ ಹೊರಗಿನ ಇತರ ದೇಶಗಳಲ್ಲಿರಬಹುದಾದ Google ಸರ್ವರ್‌ಗಳಲ್ಲಿ ಬರೆಯುತ್ತದೆ.</li>
+        <li>ಬರೆದ ಸಂಭಾಷಣೆ ಮತ್ತು CV ವಿವರಗಳನ್ನು ನೀವು ಮುಚ್ಚುವವರೆಗೆ ಅಥವಾ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸುವವರೆಗೆ ಮಾತ್ರ ಇಡಲಾಗುತ್ತದೆ, 7 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಅಲ್ಲ.</li>
+        <li>ಜಾತಿ, ಧರ್ಮ, ಆಧಾರ್, ವೈವಾಹಿಕ ಸ್ಥಿತಿ ಅಥವಾ ಜನ್ಮ ದಿನಾಂಕವನ್ನು ನಾವು ಎಂದಿಗೂ ಕೇಳುವುದಿಲ್ಲ.</li>
+        <li>ನೀವೇ ಡೌನ್‌ಲೋಡ್ ಅಥವಾ ಶೇರ್ ಮಾಡದ ಹೊರತು ಏನನ್ನೂ ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ.</li>
+      </ul>
+    </details>
+    <label class="check"><input type="checkbox" id="agree"> I understand and agree / मैं सहमत हूँ / ನಾನು ಒಪ್ಪುತ್ತೇನೆ</label>
+    <label class="check"><input type="checkbox" id="adult"> I am 18 or older / मेरी उम्र 18+ है / ನನಗೆ 18+ ವರ್ಷ</label>
+    <button id="startBtn" class="primary big" disabled>Start</button>
+    <p id="consentError" class="error" role="alert"></p>
+  </main>
+
+  <div id="app" hidden>
+    <nav class="steps" aria-label="Steps">
+      <button data-step="interview">1 Talk</button>
+      <button data-step="review">2 Check</button>
+      <button data-step="template">3 Style</button>
+      <button data-step="design">4 Design</button>
+      <button data-step="export">5 Get</button>
+    </nav>
+
+    <p id="sampleBanner" class="banner" hidden>
+      Sample mode: a scripted helper, not the AI voice agent. Type your answers. The real voice interview starts once Google Cloud is set up.
+    </p>
+
+    <!-- 1. Interview -->
+    <main id="step-interview" class="screen step">
+      <details class="notebook" open>
+        <summary>CV notebook <span id="progress" class="pill"></span></summary>
+        <ul id="checklist" class="checklist"></ul>
+        <div id="notebookLines"></div>
+      </details>
+      <section class="chat" id="chat" aria-live="polite"></section>
+      <button id="draftBtn" class="primary big" hidden>Write my CV</button>
+    </main>
+
+    <!-- 2. Template -->
+    <main id="step-template" class="screen step" hidden>
+      <h2>Pick a template</h2>
+      <div id="templates" class="templates"></div>
+    </main>
+
+    <!-- 3. Design -->
+    <main id="step-design" class="screen step" hidden>
+      <h2>Make it yours</h2>
+      <p class="hint">Say or type things like "make it blue", "put skills above education", "formal font".</p>
+      <img id="designPreview" class="preview" alt="CV preview">
+      <div class="controls">
+        <div class="row" id="accentRow" aria-label="Colour"></div>
+        <div class="row" id="fontRow" aria-label="Font"></div>
+        <div class="row" id="densityRow" aria-label="Spacing"></div>
+        <ol id="orderList" class="order"></ol>
+      </div>
+      <button class="primary" data-goto="export">Next: get my CV</button>
+    </main>
+
+    <!-- 4. Review -->
+    <main id="step-review" class="screen step" hidden>
+      <h2>Check your CV</h2>
+      <p class="hint">Highlighted lines were suggested for you: keep the ones that are true, remove the rest. Check your name spellings. Tap any line to fix it, or say what to change.</p>
+      <ul id="blockers" class="blockers"></ul>
+      <div id="reviewLines"></div>
+      <img id="reviewPreview" class="preview" alt="CV preview">
+      <button id="approveBtn" class="primary big">Looks good: choose a style</button>
+    </main>
+
+    <!-- 5. Export -->
+    <main id="step-export" class="screen step" hidden>
+      <h2>Your CV is ready</h2>
+      <img id="exportPreview" class="preview" alt="CV preview">
+      <div class="actions">
+        <a id="downloadBtn" class="primary big" href="#">Download PDF</a>
+        <button id="shareBtn" class="big">Share link (WhatsApp / email)</button>
+        <button id="copyTextBtn" class="big">Copy text for job portals</button>
+      </div>
+      <p id="shareResult" class="hint"></p>
+    </main>
+
+    <footer class="composer">
+      <p id="status" class="status" role="status"></p>
+      <div class="inputrow">
+        <button id="micBtn" class="mic" aria-label="Talk" hidden>🎤</button>
+        <input id="textInput" type="text" autocomplete="off" placeholder="Type here…" aria-label="Your answer">
+        <button id="sendBtn" class="send" aria-label="Send">➤</button>
+      </div>
+      <button id="resetBtn" class="link">Start over</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

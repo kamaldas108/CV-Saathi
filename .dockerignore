@@ -1,0 +1,16 @@
+# Never upload secrets, local data or the local virtual environment.
+.env
+*.env.local
+credentials/
+*service-account*.json
+*-sa.json
+data/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+tests/
+docs/
+plan/
+specs/

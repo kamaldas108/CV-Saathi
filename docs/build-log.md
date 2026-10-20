@@ -1,0 +1,44 @@
+# Build log
+
+One line per change, with the requirement it serves.
+
+- 2026-10-20 — Spec transcribed from `CV Project.docx` to `specs/01-spec.md` — all
+- 2026-10-20 — Notebook with evidence, number, email, content-word and sensitive-field rules — F2, F5, privacy
+- 2026-10-20 — Spelling confirmation via spelled letters or a yes; corrections replace everywhere — F4
+- 2026-10-20 — Design settings, apply/refuse logic, English phrase parser for sample mode — F7
+- 2026-10-20 — Four single-column A4 templates (fpdf2), shrink-to-fit, PNG preview, plain text — F6, F10
+- 2026-10-20 — Gemini Live config, tool declarations, dispatcher through the rules — F1, F3, F5
+- 2026-10-20 — FastAPI server: consent/18+ gate, sessions, review, export gate, share links, start over — F9, F10, F12
+- 2026-10-20 — Live WebSocket bridge with 10-min cap, 60-s idle stop, compression, usage log — F1, cost
+- 2026-10-20 — Sample-mode scripted interviewer (not AI) — F1 text path, testing without cloud
+- 2026-10-20 — Mobile-first web page: consent, talk, template, design, check, export — all
+- 2026-10-20 — Tests (81) plus deliberate-break checks on 11 rules — testing
+- 2026-10-20 — Fix: sample mode accepted "yes" as an answer to an open question — F1 (sample mode)
+- 2026-10-20 — UI: notebook above chat, readable template thumbnails, design replies in status line — F2, F6, F7
+- 2026-10-20 — Vertex AI: probed Live models/regions; chose gemini-3.8-live in us-central1 — F1, F3
+- 2026-10-20 — Fix: letter-by-letter spelling from the model became the CV name — F4
+- 2026-10-20 — Consent text (3 languages) says voices are processed in the USA — privacy (Region)
+- 2026-10-20 — Fix: yes to the agent's corrected spelling read-back was rejected; loop after rejections — F4
+- 2026-10-20 — Fix: job details given across several answers could never be saved — F5, F1
+- 2026-10-20 — Depth: trade-based suggestions and drafted lines confirmed by the student; depth hints — F1, F5
+- 2026-10-20 — New CV sections: Profile summary, Tools and Equipment — F6
+- 2026-10-20 — Fix: saying a name normally counted as spelling it, so names were confirmed before any read-back — F4
+- 2026-10-20 — Prompt: one item per save, keep the student's verbs, replace extended lines — F5, F6
+- 2026-10-20 — Fix: "All of them"/"both"/"sab" now count as agreeing to a suggested list (not with "no/not") — F5
+- 2026-10-20 — Optional tool-call logging to the server console (CVS_LOG_TOOLS=1, local only) — debugging
+- 2026-10-20 — Flow: short interview → drafted CV with suggested lines (Keep/Fix/Remove) → style — F1, F5, F9
+- 2026-10-20 — Names confirmed by a "Spelled right" tap on the Check screen — F4
+- 2026-10-20 — Fix: numbers inside the phone number counted as evidence for other numbers — F5
+- 2026-10-20 — Drafting by gemini-3.8-flash (global) in one pass: draft_cv tool + "Write my CV" button — F1, F5, cost
+- 2026-10-20 — Consent text: draft written on Google servers that may be outside India — privacy (Region)
+- 2026-10-20 — CV design: larger text, fills the page, key-facts table, two-column bullets, language stars — F6
+- 2026-10-20 — Interview asks each language's level (basic/good/fluent/native) — F6
+- 2026-10-20 — Fix: closing the voice connection cancelled the draft being written; agent could claim the draft was ready early — F1
+- 2026-10-20 — Fix: agent drafted before asking about job/languages (draft_cv now waits); agent skipped the Check screen (blocked) — F1, F9
+- 2026-10-20 — Fix: parallel thumbnail renders corrupted text and crashed the server (pdfium not thread-safe): one render at a time, objects closed inside the lock — F6, F7
+- 2026-10-20 — Fix: transcription tags like "<no speech>{pause}" showed in the chat and transcript — F1
+- 2026-10-20 — Fix: agent could draft without asking about job/apprenticeship; now requires one saved or mark_no_experience with the student's "no" — F1
+- 2026-10-20 — City is required; agent asks "anything else to add?" before drafting; projects optional — F1
+- 2026-10-20 — Fix: a failed "drafting" message to a closed connection killed the draft and left "Write my CV" blocked; drafting now has 60/90 s limits — F1
+- 2026-10-20 — Fix: "urban companies" didn't match employer "Urban Company"; role from the trade was rejected; job gate then looped and asked the student to deny their job — F1, F5
+- 2026-10-20 — Cloud Run deployment: Dockerfile, deploy.sh, docs/deploy.md; max 5 simultaneous voice interviews; usage to logs — deployment, cost
