@@ -117,8 +117,16 @@ def digits_of(text: str) -> str:
     return re.sub(r"\D", "", normalize(text))
 
 
-_MARKERS = re.compile(r"<\s*[a-z_ ]{1,24}\s*>|\{\s*[a-z_ ]{1,24}\s*\}|\[\s*(?:noise|pause|silence|inaudible|music|laughter)\s*\]",
-                      re.IGNORECASE)
+# Transcription tags ("<no speech>", "{pause}", "[noise]") and markup the voice model
+# sometimes leaks into its words ("### Draft CV Creation <Step title=... />"). Students
+# never speak in markup, so any <...> tag or ### heading is removed.
+_MARKERS = re.compile(
+    r"<[^<>]{0,300}>"                     # any tag, with or without attributes
+    r"|\{\s*[a-z_ ]{1,24}\s*\}"            # {pause}
+    r"|\[\s*(?:noise|pause|silence|inaudible|music|laughter)\s*\]"
+    r"|#{2,}[^<\n]*",                     # markdown headings
+    re.IGNORECASE,
+)
 
 
 def strip_markers(text: str) -> str:

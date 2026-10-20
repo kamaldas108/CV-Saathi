@@ -186,3 +186,19 @@ def test_failed_job_saves_do_not_block_drafting_forever():
     nb.add_experience("Electrician", "Nowhere Ltd", "", "I fix motors")
     nb.add_experience("Electrician", "Nowhere Ltd", "", "I fix motors")
     assert draft_not_ready(nb) is None
+
+
+def test_anything_else_must_be_the_last_question():
+    # Seen live: "Anything else?" was asked, then certificates and languages, then the draft.
+    from cvsaathi.live_tools import draft_not_ready
+
+    nb = full_notebook()
+    nb.facts = [f for f in nb.facts if f.field != "language"]
+    nb.add_turn("agent", "Is there anything else you would like to add to your CV?")
+    nb.add_turn("student", "Nahi, bana dijiye CV.")
+    nb.add_turn("agent", "Which languages do you speak?")
+    nb.add_turn("student", "Hindi native hai. English basic hai.")
+    nb.save_field("language", "Hindi (Native)", "Hindi native hai")
+    assert "LAST question" in draft_not_ready(nb)
+    nb.add_turn("agent", "Is there anything else you would like to add to your CV?")
+    assert draft_not_ready(nb) is None

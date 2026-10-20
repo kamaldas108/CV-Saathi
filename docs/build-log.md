@@ -42,3 +42,4 @@ One line per change, with the requirement it serves.
 - 2026-10-20 — Fix: a failed "drafting" message to a closed connection killed the draft and left "Write my CV" blocked; drafting now has 60/90 s limits — F1
 - 2026-10-20 — Fix: "urban companies" didn't match employer "Urban Company"; role from the trade was rejected; job gate then looped and asked the student to deny their job — F1, F5
 - 2026-10-20 — Cloud Run deployment: Dockerfile, deploy.sh, docs/deploy.md; max 5 simultaneous voice interviews; usage to logs — deployment, cost
+- 2026-10-20 — Fix: "anything else?" asked before certificates/languages (now must follow the languages answer); leaked markup ("### …", <Step …/>) shown in chat — F1

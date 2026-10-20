@@ -375,3 +375,14 @@ def test_name_in_allows_inflections_only():
     assert name_in("KPTCL", "K-P-T-C-L")
     assert not name_in("Urban Clap", "working in urban companies")
     assert not name_in("Larsen", "working in urban companies")
+
+
+def test_markup_leaked_by_the_voice_model_is_removed():
+    # Seen live in the cloud app: the agent's message contained "### Draft CV Creation <Step .../>".
+    from cvsaathi.notebook import strip_markers
+
+    leaked = ('Is there anything else you would like to add to your CV? ### Draft CV Creation '
+              '<Step title="Writing your CV now [20s]" />\n<Step title="Tap Keep or Remove" />\n'
+              "</Steps></LMDX>I'm writing your CV now.")
+    assert strip_markers(leaked) == "Is there anything else you would like to add to your CV? I'm writing your CV now."
+    assert strip_markers("Flat no 5 # main road") == "Flat no 5 # main road"

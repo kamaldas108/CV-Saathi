@@ -79,8 +79,10 @@ INTERVIEW (short: about 5 minutes)
   question about it, then move on.
 
 DRAFT THE CV
-- At the end of the interview, ask: "Is there anything else you would like to add to your
-  CV?" (in their language). Save anything they add.
+- Your LAST question, only after certificates and languages are done, is: "Is there
+  anything else you would like to add to your CV?" (in their language). Never ask it
+  earlier. Save anything they add.
+- Speak plain sentences only. Never say or write markup, headings, lists or tags.
 - Then call draft_cv once. Tell the
   student, in their language: "I'm writing your CV now. It takes about 20 seconds."
   Then wait quietly; do not ask more questions while it runs.
@@ -306,10 +308,13 @@ def draft_not_ready(nb: Any) -> str | None:
                 "work. Save it with add_experience, or call mark_no_experience if they say they have none.")
     if not nb.values("language"):
         return ("Not yet: first ask about certificates, and languages with their level. Then call draft_cv.")
+    # "Anything else?" must be the LAST question: asked after the languages were answered.
     asked_more = re.compile(r"anything else|anything more|aur kuch|kuch aur|innu enu|और कुछ|कुछ और|ಇನ್ನೇನಾದರೂ|ಬೇರೆ ಏನಾದರೂ", re.I)
-    if not any(turn["speaker"] == "agent" and asked_more.search(turn["text"]) for turn in nb.transcript[-12:]):
-        return ("Not yet: before drafting, ask the student: \"Is there anything else you would like to add to your CV?\" "
-                "Save anything they add, then call draft_cv.")
+    asked_at = [i for i, turn in enumerate(nb.transcript) if turn["speaker"] == "agent" and asked_more.search(turn["text"])]
+    languages_at = [i for f in nb.values("language") if (i := nb._student_turn_index(f.evidence)) is not None]
+    if not asked_at or (languages_at and asked_at[-1] < max(languages_at)):
+        return ("Not yet: as your LAST question, ask the student: \"Is there anything else you would like to add to "
+                "your CV?\" Save anything they add, then call draft_cv.")
     return None
 
 
