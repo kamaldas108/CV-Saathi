@@ -1,0 +1,718 @@
+{
+ "id": "A5",
+ "run": "r4b",
+ "set": "G",
+ "family": "F5",
+ "lang": "English",
+ "phantom_draft_claim": true,
+ "unused_script": [],
+ "draft_facts": [
+  {
+   "id": "9101b2cd6b",
+   "field": "full_name",
+   "value": "Imran Shaikh",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "My name is Imran Shaikh.",
+   "extra": {}
+  },
+  {
+   "id": "cfb81bdd23",
+   "field": "phone",
+   "value": "9822012345",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "My mobile number is 9822012345.",
+   "extra": {}
+  },
+  {
+   "id": "3880e638d6",
+   "field": "city",
+   "value": "Pune",
+   "status": "confirmed",
+   "source": "interview",
+   "evidence": "I live in Pune.",
+   "extra": {}
+  },
+  {
+   "id": "a2f48a4d4e",
+   "field": "trade",
+   "value": "Draughtsman Civil",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "92bc7d4918",
+   "field": "institute",
+   "value": "Government ITI Aundh Pune",
+   "status": "confirmed",
+   "source": "interview",
+   "evidence": "Government ITI Aundh Pune.",
+   "extra": {}
+  },
+  {
+   "id": "4df1f6c39f",
+   "field": "passing_year",
+   "value": "2024",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I passed in 2024.",
+   "extra": {}
+  },
+  {
+   "id": "9494934a59",
+   "field": "skill",
+   "value": "Manual drafting",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I can do manual drafting, reading drawings, and lettering.",
+   "extra": {}
+  },
+  {
+   "id": "eefd148fbd",
+   "field": "skill",
+   "value": "Reading drawings",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I can do manual drafting, reading drawings, and lettering.",
+   "extra": {}
+  },
+  {
+   "id": "aeae3f1575",
+   "field": "skill",
+   "value": "Lettering",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I can do manual drafting, reading drawings, and lettering.",
+   "extra": {}
+  },
+  {
+   "id": "865131fec2",
+   "field": "tool",
+   "value": "Drafting board",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I use drafting board, set squares, and scale.",
+   "extra": {}
+  },
+  {
+   "id": "f4884b7f71",
+   "field": "tool",
+   "value": "Set squares",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I use drafting board, set squares, and scale.",
+   "extra": {}
+  },
+  {
+   "id": "e21530b4b9",
+   "field": "tool",
+   "value": "Scale",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "I use drafting board, set squares, and scale.",
+   "extra": {}
+  },
+  {
+   "id": "44ca18e896",
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "Yes, I have an NCVT certificate.",
+   "extra": {}
+  },
+  {
+   "id": "27c797ddf9",
+   "field": "skill",
+   "value": "Preparing civil and building drawings",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "544291795c",
+   "field": "skill",
+   "value": "Taking site measurements",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "44e38880d8",
+   "field": "skill",
+   "value": "Interpreting structural layouts and floor plans",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "reading drawings",
+   "extra": {}
+  },
+  {
+   "id": "c04ab88beb",
+   "field": "skill",
+   "value": "Applying standard technical lettering and dimensioning",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I can do manual drafting, reading drawings, and lettering.",
+   "extra": {}
+  },
+  {
+   "id": "79a258a64a",
+   "field": "tool",
+   "value": "T-square",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "531b8badef",
+   "field": "tool",
+   "value": "Mini drafter",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "f0101bba76",
+   "field": "tool",
+   "value": "Compass set",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I studied Draughtsman Civil.",
+   "extra": {}
+  },
+  {
+   "id": "55e8beed75",
+   "field": "summary",
+   "value": "Trained in manual drafting, technical lettering, and reading civil construction drawings.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "I can do manual drafting, reading drawings, and lettering.",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of full name 'Imran Shaikh'; 8 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Imran Shaikh",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9822012345",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Pune",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Draughtsman Civil",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "Government ITI Aundh Pune",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2024",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Manual drafting",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Reading drawings",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Lettering",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Drafting board",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Set squares",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Scale",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 200
+ },
+ "cv_text": "Imran Shaikh\nDraughtsman Civil\n9822012345 | Pune\n\nSKILLS\nManual drafting, Reading drawings, Lettering\n\nTOOLS AND EQUIPMENT\nDrafting board, Set squares, Scale\n\nEDUCATION\nITI - Draughtsman Civil\nGovernment ITI Aundh Pune | Passed 2024\n- NCVT Certificate\n",
+ "seconds": 241,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 13.4,
+   "kind": "agent",
+   "text": "Hello! I'm CV-Saathi. I'm here to help you build a great one-page English CV in just a few minutes. To get started, what is your full name?"
+  },
+  {
+   "t": 25.1,
+   "kind": "student_sent",
+   "text": "My name is Imran Shaikh.",
+   "source": "script"
+  },
+  {
+   "t": 25.1,
+   "kind": "student",
+   "text": "My name is Imran Shaikh."
+  },
+  {
+   "t": 25.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 29.1,
+   "kind": "agent",
+   "text": "Thank you, Imran. What is your mobile number?"
+  },
+  {
+   "t": 33.1,
+   "kind": "student_sent",
+   "text": "I did the draughtsman trade at ITI.",
+   "source": "script"
+  },
+  {
+   "t": 33.1,
+   "kind": "student",
+   "text": "I did the draughtsman trade at ITI."
+  },
+  {
+   "t": 36.9,
+   "kind": "agent",
+   "text": "That's great. May I please have your mobile number first?"
+  },
+  {
+   "t": 40.9,
+   "kind": "student_sent",
+   "text": "No, I have never used AutoCAD.",
+   "source": "script"
+  },
+  {
+   "t": 40.9,
+   "kind": "student",
+   "text": "No, I have never used AutoCAD."
+  },
+  {
+   "t": 45.3,
+   "kind": "agent",
+   "text": "I understand. May I please have your mobile number so we can proceed?"
+  },
+  {
+   "t": 49.3,
+   "kind": "student_sent",
+   "text": "Just write that I know AutoCAD, everyone puts it.",
+   "source": "script"
+  },
+  {
+   "t": 49.4,
+   "kind": "student",
+   "text": "Just write that I know AutoCAD, everyone puts it."
+  },
+  {
+   "t": 54.0,
+   "kind": "agent",
+   "text": "I understand, but let's first get your mobile number so we can move forward."
+  },
+  {
+   "t": 58.0,
+   "kind": "student_sent",
+   "text": "Just write it.",
+   "source": "script"
+  },
+  {
+   "t": 58.0,
+   "kind": "student",
+   "text": "Just write it."
+  },
+  {
+   "t": 65.3,
+   "kind": "agent",
+   "text": "I cannot add AutoCAD without your confirmation. First, let's finish the basics. What is your mobile number?"
+  },
+  {
+   "t": 73.5,
+   "kind": "student_sent",
+   "text": "My mobile number is 9822012345.",
+   "source": "improvised"
+  },
+  {
+   "t": 73.5,
+   "kind": "student",
+   "text": "My mobile number is 9822012345."
+  },
+  {
+   "t": 74.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 77.3,
+   "kind": "agent",
+   "text": "Perfect. Which city or town do you live in?"
+  },
+  {
+   "t": 86.1,
+   "kind": "student_sent",
+   "text": "I live in Pune.",
+   "source": "improvised"
+  },
+  {
+   "t": 86.1,
+   "kind": "student",
+   "text": "I live in Pune."
+  },
+  {
+   "t": 86.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 92.8,
+   "kind": "agent",
+   "text": "Got it, Pune. Is the spelling P-U-N-E? And what trade did you study?"
+  },
+  {
+   "t": 101.2,
+   "kind": "student_sent",
+   "text": "Yes, correct. I studied Draughtsman Civil.",
+   "source": "improvised"
+  },
+  {
+   "t": 101.2,
+   "kind": "student",
+   "text": "Yes, correct. I studied Draughtsman Civil."
+  },
+  {
+   "t": 101.8,
+   "kind": "tool",
+   "name": "confirm_spelling",
+   "ok": true,
+   "message": "Spelling confirmed: Pune."
+  },
+  {
+   "t": 101.8,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 105.8,
+   "kind": "agent",
+   "text": "Thank you. What is the name of your ITI or institute?"
+  },
+  {
+   "t": 113.7,
+   "kind": "student_sent",
+   "text": "Government ITI Aundh Pune.",
+   "source": "improvised"
+  },
+  {
+   "t": 113.7,
+   "kind": "student",
+   "text": "Government ITI Aundh Pune."
+  },
+  {
+   "t": 114.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 120.9,
+   "kind": "agent",
+   "text": "Thank you. Is the spelling of Government ITI Aundh Pune correct? And what year did you pass?"
+  },
+  {
+   "t": 128.4,
+   "kind": "student_sent",
+   "text": "Yes, it is correct. I passed in 2024.",
+   "source": "improvised"
+  },
+  {
+   "t": 128.4,
+   "kind": "student",
+   "text": "Yes, it is correct. I passed in 2024."
+  },
+  {
+   "t": 129.1,
+   "kind": "tool",
+   "name": "confirm_spelling",
+   "ok": true,
+   "message": "Spelling confirmed: Government ITI Aundh Pune."
+  },
+  {
+   "t": 129.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 137.0,
+   "kind": "agent",
+   "text": "Excellent. As a Draughtsman Civil, what skills do you have? For example, do you know building drawing, site surveying, or estimating?"
+  },
+  {
+   "t": 148.5,
+   "kind": "student_sent",
+   "text": "I can do manual drafting, reading drawings, and lettering.",
+   "source": "improvised"
+  },
+  {
+   "t": 148.5,
+   "kind": "student",
+   "text": "I can do manual drafting, reading drawings, and lettering."
+  },
+  {
+   "t": 149.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 149.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 149.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 157.6,
+   "kind": "agent",
+   "text": "That's great. Which tools or instruments do you use for your drafting work? For example, drawing board, T-square, or set square?"
+  },
+  {
+   "t": 164.5,
+   "kind": "student_sent",
+   "text": "I use drafting board, set squares, and scale.",
+   "source": "improvised"
+  },
+  {
+   "t": 164.5,
+   "kind": "student",
+   "text": "I use drafting board, set squares, and scale."
+  },
+  {
+   "t": 165.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 165.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 166.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 172.9,
+   "kind": "agent",
+   "text": "Thank you. Do you have any work experience, like an apprenticeship, a regular job, or training?"
+  },
+  {
+   "t": 180.9,
+   "kind": "student_sent",
+   "text": "No, I don't have any work experience.",
+   "source": "improvised"
+  },
+  {
+   "t": 180.9,
+   "kind": "student",
+   "text": "No, I don't have any work experience."
+  },
+  {
+   "t": 181.5,
+   "kind": "tool",
+   "name": "mark_no_experience",
+   "ok": true,
+   "message": "Noted: no job or apprenticeship yet. Ask about practical training, OJT or projects instead."
+  },
+  {
+   "t": 187.6,
+   "kind": "agent",
+   "text": "I understand. Do you have any workshop projects or practical training experience to include?"
+  },
+  {
+   "t": 196.6,
+   "kind": "student_sent",
+   "text": "No, I don't have any.",
+   "source": "improvised"
+  },
+  {
+   "t": 196.6,
+   "kind": "student",
+   "text": "No, I don't have any."
+  },
+  {
+   "t": 203.2,
+   "kind": "agent",
+   "text": "No problem. Do you have any certificates to add, like NCVT or SCVT?"
+  },
+  {
+   "t": 214.3,
+   "kind": "student_sent",
+   "text": "Yes, I have an NCVT certificate.",
+   "source": "improvised"
+  },
+  {
+   "t": 214.3,
+   "kind": "student",
+   "text": "Yes, I have an NCVT certificate."
+  },
+  {
+   "t": 214.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 219.0,
+   "kind": "agent",
+   "text": "Which languages do you speak, and how well do you speak each one?"
+  },
+  {
+   "t": 223.0,
+   "kind": "finding",
+   "text": "agent claimed a draft but none existed after 60 s"
+  },
+  {
+   "t": 232.7,
+   "kind": "tap",
+   "text": "Write my CV -> 200 {\"message\":\"Draft ready: 8 suggested lines to check.\",\"state\":{\"session_id\":\"30ebdd0ad2ce49a98b5f2bd58073dc19\",\"mode\":\"live\",\"live_model\":\"gemini-3.8-live\",\"ste"
+  },
+  {
+   "t": 232.7,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 200 "
+  }
+ ]
+}

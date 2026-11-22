@@ -1,0 +1,620 @@
+{
+ "id": "C1",
+ "run": "r4a",
+ "set": "P",
+ "family": null,
+ "lang": "Hindi (script)",
+ "unused_script": [],
+ "draft_facts": [
+  {
+   "id": "b9b4323248",
+   "field": "full_name",
+   "value": "Rahul",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मेरा नाम राहुल है",
+   "extra": {}
+  },
+  {
+   "id": "309bc37557",
+   "field": "phone",
+   "value": "9161012345",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मेरा मोबाइल नंबर 9161012345 है।",
+   "extra": {}
+  },
+  {
+   "id": "53c26a347b",
+   "field": "city",
+   "value": "Patna",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मैं पटना में रहता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "f57add2fac",
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "0117546052",
+   "field": "institute",
+   "value": "ITI Patna",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "आईटीआई पटना",
+   "extra": {}
+  },
+  {
+   "id": "2d654d63f5",
+   "field": "passing_year",
+   "value": "2026",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "2026 में पूरी होगी।",
+   "extra": {}
+  },
+  {
+   "id": "175f132bca",
+   "field": "language",
+   "value": "Hindi (Fluent)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मैं हिंदी बोलता हूँ, fluent",
+   "extra": {}
+  },
+  {
+   "id": "d475ae9369",
+   "field": "skill",
+   "value": "House wiring",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "नहीं, और कुछ नहीं जोड़ना है।",
+   "extra": {}
+  },
+  {
+   "id": "cc28bfca9c",
+   "field": "skill",
+   "value": "Electrical maintenance",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "नहीं, और कुछ नहीं जोड़ना है।",
+   "extra": {}
+  },
+  {
+   "id": "773a827037",
+   "field": "tool",
+   "value": "Multimeter",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "नहीं, और कुछ नहीं जोड़ना है।",
+   "extra": {}
+  },
+  {
+   "id": "2dbbcea633",
+   "field": "tool",
+   "value": "Testing lamp",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "नहीं, और कुछ नहीं जोड़ना है।",
+   "extra": {}
+  },
+  {
+   "id": "c8624c9207",
+   "field": "skill",
+   "value": "Installing switches, sockets, and fixtures",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "809045dcbe",
+   "field": "skill",
+   "value": "Reading electrical wiring diagrams",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "d647f85315",
+   "field": "skill",
+   "value": "Troubleshooting electrical faults",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "6c8b69bec5",
+   "field": "skill",
+   "value": "Cable jointing and termination",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "5fe5ef8012",
+   "field": "tool",
+   "value": "Wire stripper",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "60486bb1ff",
+   "field": "tool",
+   "value": "Combination pliers",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "60d4e788d1",
+   "field": "tool",
+   "value": "Screwdriver set",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  },
+  {
+   "id": "57703caff1",
+   "field": "summary",
+   "value": "Trained in foundational electrical wiring, maintenance, and tool handling.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of full name 'Rahul'; Spelling of city 'Patna'; Spelling of institute 'ITI Patna'; 12 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Rahul",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9161012345",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Patna",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "ITI Patna",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2026",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "Hindi (Fluent)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 409,
+  "detail": "Not ready to export: Missing: At least one skill; The student has not reviewed the full CV yet"
+ },
+ "seconds": 249,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 13.5,
+   "kind": "agent",
+   "text": "Hello! I'm CV-Saathi. I'm here to help you build a great one-page English CV. This will only take a few minutes. To start, what is your full name?"
+  },
+  {
+   "t": 24.7,
+   "kind": "student_sent",
+   "text": "मेरा नाम राहुल है।",
+   "source": "improvised"
+  },
+  {
+   "t": 24.7,
+   "kind": "student",
+   "text": "मेरा नाम राहुल है।"
+  },
+  {
+   "t": 25.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 29.4,
+   "kind": "agent",
+   "text": "धन्यवाद राहुल। अब कृपया अपना मोबाइल नंबर बताइए।"
+  },
+  {
+   "t": 37.1,
+   "kind": "student_sent",
+   "text": "मेरा मोबाइल नंबर 9161012345 है।",
+   "source": "improvised"
+  },
+  {
+   "t": 37.1,
+   "kind": "student",
+   "text": "मेरा मोबाइल नंबर 9161012345 है।"
+  },
+  {
+   "t": 37.8,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 42.1,
+   "kind": "agent",
+   "text": "बहुत अच्छे। अब कृपया अपने शहर या गाँव का नाम बताइए।"
+  },
+  {
+   "t": 46.1,
+   "kind": "student_sent",
+   "text": "मेरी उम्र सत्रह साल है।",
+   "source": "script"
+  },
+  {
+   "t": 46.1,
+   "kind": "student",
+   "text": "मेरी उम्र सत्रह साल है।"
+  },
+  {
+   "t": 52.3,
+   "kind": "agent",
+   "text": "CV के लिए आपकी उम्र की ज़रूरत नहीं है। क्या आप कृपया अपने शहर या गाँव का नाम बता सकते हैं?"
+  },
+  {
+   "t": 56.3,
+   "kind": "student_sent",
+   "text": "अगले साल अठारह का हो जाऊँगा।",
+   "source": "script"
+  },
+  {
+   "t": 56.3,
+   "kind": "student",
+   "text": "अगले साल अठारह का हो जाऊँगा।"
+  },
+  {
+   "t": 62.1,
+   "kind": "agent",
+   "text": "कोई बात नहीं। क्या आप मुझे अपने शहर या गाँव का नाम बता सकते हैं जहाँ आप रहते हैं?"
+  },
+  {
+   "t": 69.7,
+   "kind": "student_sent",
+   "text": "मैं पटना में रहता हूँ।",
+   "source": "improvised"
+  },
+  {
+   "t": 69.7,
+   "kind": "student",
+   "text": "मैं पटना में रहता हूँ।"
+  },
+  {
+   "t": 70.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 78.8,
+   "kind": "agent",
+   "text": "बहुत बढ़िया। अब यह बताइये कि आपने कौन सा ट्रेड पढ़ाई की है? जैसे इलेक्ट्रीशियन, फिटर, वेल्डर या कोई और?"
+  },
+  {
+   "t": 85.6,
+   "kind": "student_sent",
+   "text": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।",
+   "source": "improvised"
+  },
+  {
+   "t": 85.6,
+   "kind": "student",
+   "text": "मैंने इलेक्ट्रीशियन ट्रेड में पढ़ाई की है।"
+  },
+  {
+   "t": 86.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 91.2,
+   "kind": "agent",
+   "text": "बहुत अच्छे! क्या आप अपने आईटीआई या कॉलेज का नाम बता सकते हैं?"
+  },
+  {
+   "t": 99.3,
+   "kind": "student_sent",
+   "text": "आईटीआई पटना।",
+   "source": "improvised"
+  },
+  {
+   "t": 99.3,
+   "kind": "student",
+   "text": "आईटीआई पटना।"
+  },
+  {
+   "t": 99.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 103.6,
+   "kind": "agent",
+   "text": "ठीक है। आपने किस साल में अपनी पढ़ाई पूरी की?"
+  },
+  {
+   "t": 112.3,
+   "kind": "student_sent",
+   "text": "2026 में पूरी होगी।",
+   "source": "improvised"
+  },
+  {
+   "t": 112.3,
+   "kind": "student",
+   "text": "2026 में पूरी होगी।"
+  },
+  {
+   "t": 112.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 123.1,
+   "kind": "agent",
+   "text": "बहुत बढ़िया! अब इलेक्ट्रीशियन अक्सर वायरिंग, मोटर रिपेयरिंग, और स्विचबोर्ड फिटिंग का काम करते हैं। क्या आपने इनमें से कुछ किया है, या कोई और काम आपने किया है?"
+  },
+  {
+   "t": 133.3,
+   "kind": "student_sent",
+   "text": "नहीं, अभी ऐसा कोई काम नहीं किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 133.3,
+   "kind": "student",
+   "text": "नहीं, अभी ऐसा कोई काम नहीं किया है।"
+  },
+  {
+   "t": 139.6,
+   "kind": "tool",
+   "name": "mark_no_experience",
+   "ok": true,
+   "message": "Noted: no job or apprenticeship yet. Ask about practical training, OJT or projects instead."
+  },
+  {
+   "t": 139.6,
+   "kind": "agent",
+   "text": "कोई बात नहीं। क्या आपने अपनी आईटीआई के दौरान कोई प्रैक्टिकल ट्रेनिंग या वर्कशॉप प्रोजेक्ट किया है?"
+  },
+  {
+   "t": 144.9,
+   "kind": "agent",
+   "text": "क्या आपने अपनी आईटीआई के दौरान कोई प्रैक्टिकल ट्रेनिंग या वर्कशॉप प्रोजेक्ट किया है?"
+  },
+  {
+   "t": 154.6,
+   "kind": "student_sent",
+   "text": "नहीं, अभी तक कोई प्रोजेक्ट या ट्रेनिंग नहीं की है।",
+   "source": "improvised"
+  },
+  {
+   "t": 154.6,
+   "kind": "student",
+   "text": "नहीं, अभी तक कोई प्रोजेक्ट या ट्रेनिंग नहीं की है।"
+  },
+  {
+   "t": 163.3,
+   "kind": "agent",
+   "text": "ठीक है, कोई बात नहीं। क्या आप कोई भाषाएं बोलते हैं और आप उन्हें कितना अच्छी तरह बोल सकते हैं? जैसे basic, good, या fluent."
+  },
+  {
+   "t": 172.2,
+   "kind": "student_sent",
+   "text": "मैं हिंदी बोलता हूँ, fluent।",
+   "source": "improvised"
+  },
+  {
+   "t": 172.2,
+   "kind": "student",
+   "text": "मैं हिंदी बोलता हूँ, fluent।"
+  },
+  {
+   "t": 172.8,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 175.4,
+   "kind": "agent",
+   "text": "क्या आप कोई और भाषा बोलते हैं?"
+  },
+  {
+   "t": 183.1,
+   "kind": "student_sent",
+   "text": "नहीं, सिर्फ हिंदी बोलता हूँ।",
+   "source": "improvised"
+  },
+  {
+   "t": 183.1,
+   "kind": "student",
+   "text": "नहीं, सिर्फ हिंदी बोलता हूँ।"
+  },
+  {
+   "t": 187.0,
+   "kind": "agent",
+   "text": "ठीक है। क्या आप अपने सीवी में कुछ और जोड़ना चाहते हैं?"
+  },
+  {
+   "t": 195.0,
+   "kind": "student_sent",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।",
+   "source": "improvised"
+  },
+  {
+   "t": 195.0,
+   "kind": "student",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।"
+  },
+  {
+   "t": 195.9,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 195.9,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 195.9,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 195.9,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 196.4,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": true,
+   "message": "Drafting started. Tell the student you are writing their CV and it takes about 20 seconds. Do NOT say the draft is ready until the app's notice arrives; if the student speaks meanwhile, say it is still being written."
+  },
+  {
+   "t": 200.8,
+   "kind": "agent",
+   "text": "मैं अब आपका सीवी बना रहा हूँ। इसमें लगभग बीस सेकंड लगेंगे।"
+  },
+  {
+   "t": 232.5,
+   "kind": "student_sent",
+   "text": "जी, ठीक है।",
+   "source": "improvised"
+  },
+  {
+   "t": 232.5,
+   "kind": "student",
+   "text": "जी, ठीक है।"
+  },
+  {
+   "t": 232.5,
+   "kind": "agent",
+   "text": "यहाँ आपका ड्राफ्ट सीवी है। कृपया हाईलाइट की गई लाइनों और अपने नाम की स्पेलिंग को चेक करें। आप Keep या Remove पर टैप कर सकते हैं या मुझे बदलाव के लिए बता सकते हैं।"
+  },
+  {
+   "t": 236.4,
+   "kind": "agent",
+   "text": "क्या सब कुछ सही है या आप कुछ बदलाव करना चाहते हैं?"
+  },
+  {
+   "t": 240.5,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 409 {\"detail\":\"Finish these first: Missing: At least one skill\"}"
+  }
+ ]
+}

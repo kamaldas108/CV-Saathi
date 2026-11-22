@@ -1,0 +1,849 @@
+{
+ "id": "A4",
+ "run": "r4b",
+ "set": "G",
+ "family": "F4",
+ "lang": "Hindi (script) + spelled Latin",
+ "unused_script": [],
+ "draft_facts": [
+  {
+   "id": "f0065b6ff0",
+   "field": "full_name",
+   "value": "Dnyaneshwar Tiwary",
+   "status": "confirmed",
+   "source": "interview",
+   "evidence": "मेरा नाम ज्ञानेश्वर तिवारी है। | D-N-Y-A-N-E-S-H-W-A-R, T-I-W-A-R-Y.",
+   "extra": {}
+  },
+  {
+   "id": "1f2c8be40b",
+   "field": "city",
+   "value": "Simriya",
+   "status": "confirmed",
+   "source": "interview",
+   "evidence": "मेरा गाँव सिमरिया है, S-I-M-R-I-Y-A.",
+   "extra": {}
+  },
+  {
+   "id": "8999f91f8f",
+   "field": "trade",
+   "value": "Fitter",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "622fb00c1e",
+   "field": "phone",
+   "value": "9425011223",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मेरा नंबर 9425011223 है।",
+   "extra": {}
+  },
+  {
+   "id": "9de4793031",
+   "field": "institute",
+   "value": "ITI Rewa",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मेरी आईटीआई रीवा है।",
+   "extra": {}
+  },
+  {
+   "id": "cfe9fd3c09",
+   "field": "passing_year",
+   "value": "2024",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "2024 में पास किया।",
+   "extra": {}
+  },
+  {
+   "id": "e8e43157d9",
+   "field": "skill",
+   "value": "Fitting",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "6bd93fd909",
+   "field": "skill",
+   "value": "Drilling",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "2a71592e38",
+   "field": "tool",
+   "value": "Vernier Caliper",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "extra": {}
+  },
+  {
+   "id": "52c9d5d293",
+   "field": "tool",
+   "value": "File",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "extra": {}
+  },
+  {
+   "id": "beb14e56b6",
+   "field": "tool",
+   "value": "Hacksaw",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "extra": {}
+  },
+  {
+   "id": "1971dab3aa",
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, NCVT का सर्टिफिकेट है।",
+   "extra": {}
+  },
+  {
+   "id": "ac7e26acb5",
+   "field": "language",
+   "value": "Hindi (Good)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हिंदी अच्छे से आती है और इंग्लिश बेसिक लेवल पर।",
+   "extra": {}
+  },
+  {
+   "id": "99c7a05f6b",
+   "field": "language",
+   "value": "English (Basic)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हिंदी अच्छे से आती है और इंग्लिश बेसिक लेवल पर।",
+   "extra": {}
+  },
+  {
+   "id": "f61cb015ba",
+   "field": "summary",
+   "value": "Trained in metal fitting, drilling operations, and precision measurement.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "a868ef67aa",
+   "field": "skill",
+   "value": "Operating drilling machines for hole making and counterboring",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "84b811e037",
+   "field": "skill",
+   "value": "Filing and sawing metal workpieces to required dimensions",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "extra": {}
+  },
+  {
+   "id": "8de5583a88",
+   "field": "skill",
+   "value": "Measuring and inspecting components using precision measuring tools",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "extra": {}
+  },
+  {
+   "id": "308f7515b4",
+   "field": "skill",
+   "value": "Assembling and aligning metal parts and components",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "601c1baee8",
+   "field": "skill",
+   "value": "Threading and tapping internal and external threads",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "a2f360868d",
+   "field": "tool",
+   "value": "Micrometer",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "bd619f9959",
+   "field": "tool",
+   "value": "Bench Vice",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "699ae3948a",
+   "field": "tool",
+   "value": "Steel Rule",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of institute 'ITI Rewa'; 9 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Dnyaneshwar Tiwary",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Simriya",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Fitter",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9425011223",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "ITI Rewa",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2024",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Fitting",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Drilling",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Vernier Caliper",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "File",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Hacksaw",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "Hindi (Good)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "English (Basic)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 200
+ },
+ "cv_text": "Dnyaneshwar Tiwary\nFitter\n9425011223 | Simriya\n\nSKILLS\nFitting, Drilling\n\nTOOLS AND EQUIPMENT\nVernier Caliper, File, Hacksaw\n\nEDUCATION\nITI - Fitter\nITI Rewa | Passed 2024\n- NCVT Certificate\n\nLANGUAGES\nHindi (Good), English (Basic)\n",
+ "seconds": 436,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 14.2,
+   "kind": "agent",
+   "text": "Hello! I'm CV-Saathi. I'm here to help you build a great one-page English CV in just a few minutes. To start, what is your full name?"
+  },
+  {
+   "t": 27.0,
+   "kind": "student_sent",
+   "text": "मेरा नाम ज्ञानेश्वर तिवारी है।",
+   "source": "script"
+  },
+  {
+   "t": 27.0,
+   "kind": "student",
+   "text": "मेरा नाम ज्ञानेश्वर तिवारी है।"
+  },
+  {
+   "t": 27.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 32.0,
+   "kind": "agent",
+   "text": "Thank you, Dnyaneshwar. Can you please share your mobile number?"
+  },
+  {
+   "t": 36.0,
+   "kind": "student_sent",
+   "text": "D-N-Y-A-N-E-S-H-W-A-R, T-I-W-A-R-Y.",
+   "source": "script"
+  },
+  {
+   "t": 36.0,
+   "kind": "student",
+   "text": "D-N-Y-A-N-E-S-H-W-A-R, T-I-W-A-R-Y."
+  },
+  {
+   "t": 36.7,
+   "kind": "tool",
+   "name": "confirm_spelling",
+   "ok": true,
+   "message": "Spelling confirmed: Dnyaneshwar Tiwary."
+  },
+  {
+   "t": 39.8,
+   "kind": "agent",
+   "text": "Thanks. Please share your mobile number."
+  },
+  {
+   "t": 43.8,
+   "kind": "student_sent",
+   "text": "मेरा गाँव सिमरिया है, S-I-M-R-I-Y-A.",
+   "source": "script"
+  },
+  {
+   "t": 43.8,
+   "kind": "student",
+   "text": "मेरा गाँव सिमरिया है, S-I-M-R-I-Y-A."
+  },
+  {
+   "t": 44.5,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 46.8,
+   "kind": "agent",
+   "text": "मोबाइल नंबर क्या है आपका?```"
+  },
+  {
+   "t": 50.8,
+   "kind": "student_sent",
+   "text": "मैंने फिटर ट्रेड किया है।",
+   "source": "script"
+  },
+  {
+   "t": 50.8,
+   "kind": "student",
+   "text": "मैंने फिटर ट्रेड किया है।"
+  },
+  {
+   "t": 51.5,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 54.5,
+   "kind": "agent",
+   "text": "कृपया अपना मोबाइल नंबर बताइए।"
+  },
+  {
+   "t": 63.6,
+   "kind": "student_sent",
+   "text": "मेरा नंबर 9425011223 है।",
+   "source": "improvised"
+  },
+  {
+   "t": 63.6,
+   "kind": "student",
+   "text": "मेरा नंबर 9425011223 है।"
+  },
+  {
+   "t": 64.2,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 66.7,
+   "kind": "agent",
+   "text": "आपकी आईटीआई का नाम क्या है?"
+  },
+  {
+   "t": 74.7,
+   "kind": "student_sent",
+   "text": "मेरी आईटीआई रीवा है।",
+   "source": "improvised"
+  },
+  {
+   "t": 74.7,
+   "kind": "student",
+   "text": "मेरी आईटीआई रीवा है।"
+  },
+  {
+   "t": 75.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 78.0,
+   "kind": "agent",
+   "text": "Thanks. What was your passing year?"
+  },
+  {
+   "t": 85.5,
+   "kind": "student_sent",
+   "text": "2024 में पास किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 85.5,
+   "kind": "student",
+   "text": "2024 में पास किया।"
+  },
+  {
+   "t": 86.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 91.7,
+   "kind": "agent",
+   "text": "Fitter trade ke liye, kya aapne pipe fitting, drilling, aur marking jaisa kaam kiya hai? Inme"
+  },
+  {
+   "t": 100.9,
+   "kind": "student_sent",
+   "text": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 100.9,
+   "kind": "student",
+   "text": "हाँ, मैंने फिटिंग और ड्रिलिंग का काम किया है।"
+  },
+  {
+   "t": 101.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 101.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 106.4,
+   "kind": "agent",
+   "text": "बहुत अच्छे! क्या आपने ड्राइंग पढ़ना और मार्किंग जैसा काम भी किया है?"
+  },
+  {
+   "t": 116.4,
+   "kind": "student_sent",
+   "text": "नहीं, वो नहीं किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 116.4,
+   "kind": "student",
+   "text": "नहीं, वो नहीं किया।"
+  },
+  {
+   "t": 123.1,
+   "kind": "agent",
+   "text": "ठीक है। क्या आपने कभी कोई हैंड tools, जैसे माइक्रोमीटर या वर्नियर कैलिपर, इस्तेमाल किया है?"
+  },
+  {
+   "t": 130.3,
+   "kind": "student_sent",
+   "text": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 130.3,
+   "kind": "student",
+   "text": "हाँ, मैंने वर्नियर कैलिपर, फ़ाइल और हेक्सॉ यूज़ किया है।"
+  },
+  {
+   "t": 131.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 131.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 131.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 136.2,
+   "kind": "agent",
+   "text": "बहुत बढ़िया! क्या आपने कोई अप्रेंटिसशिप, जॉब या प्रैक्टिकल ट्रेनिंग की है?"
+  },
+  {
+   "t": 143.4,
+   "kind": "student_sent",
+   "text": "नहीं, कोई जॉब या अप्रेंटिसशिप नहीं की है।",
+   "source": "improvised"
+  },
+  {
+   "t": 143.4,
+   "kind": "student",
+   "text": "नहीं, कोई जॉब या अप्रेंटिसशिप नहीं की है।"
+  },
+  {
+   "t": 143.9,
+   "kind": "tool",
+   "name": "mark_no_experience",
+   "ok": true,
+   "message": "Noted: no job or apprenticeship yet. Ask about practical training, OJT or projects instead."
+  },
+  {
+   "t": 149.4,
+   "kind": "agent",
+   "text": "कोई बात नहीं। क्या आपने आईटीआई के दौरान कोई प्रोजेक्ट या वर्कशॉप का काम किया है?"
+  },
+  {
+   "t": 158.8,
+   "kind": "student_sent",
+   "text": "नहीं, कोई प्रोजेक्ट नहीं किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 158.8,
+   "kind": "student",
+   "text": "नहीं, कोई प्रोजेक्ट नहीं किया।"
+  },
+  {
+   "t": 164.7,
+   "kind": "agent",
+   "text": "कोई बात नहीं। क्या आपके पास कोई सर्टिफिकेट है, जैसे NCVT या SCVT का?"
+  },
+  {
+   "t": 172.2,
+   "kind": "student_sent",
+   "text": "हाँ, NCVT का सर्टिफिकेट है।",
+   "source": "improvised"
+  },
+  {
+   "t": 172.2,
+   "kind": "student",
+   "text": "हाँ, NCVT का सर्टिफिकेट है।"
+  },
+  {
+   "t": 172.8,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 176.6,
+   "kind": "agent",
+   "text": "आप कौन-कौन सी भाषाएं बोलते हैं और किस स्तर पर?"
+  },
+  {
+   "t": 378.6,
+   "kind": "student_sent",
+   "text": "हिंदी अच्छे से आती है और इंग्लिश बेसिक लेवल पर।",
+   "source": "improvised"
+  },
+  {
+   "t": 378.6,
+   "kind": "note",
+   "text": "reconnected (mic tapped again)"
+  },
+  {
+   "t": 383.0,
+   "kind": "student",
+   "text": "हिंदी अच्छे से आती है और इंग्लिश बेसिक लेवल पर।"
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Already in the notebook."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Already in the notebook."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Already in the notebook."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Already in the notebook."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Already in the notebook."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "mark_no_experience",
+   "ok": true,
+   "message": "Noted: no job or apprenticeship yet. Ask about practical training, OJT or projects instead."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 385.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 389.5,
+   "kind": "agent",
+   "text": "क्या आप अपने सीवी में कुछ और जोड़ना चाहते हैं?"
+  },
+  {
+   "t": 398.4,
+   "kind": "student_sent",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।",
+   "source": "improvised"
+  },
+  {
+   "t": 398.4,
+   "kind": "student",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।"
+  },
+  {
+   "t": 399.0,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": true,
+   "message": "Drafting started. Tell the student you are writing their CV and it takes about 20 seconds. Do NOT say the draft is ready until the app's notice arrives; if the student speaks meanwhile, say it is still being written."
+  },
+  {
+   "t": 404.1,
+   "kind": "agent",
+   "text": "मैं आपका सीवी अभी बना रहा हूँ। इसमें लगभग 20 सेकंड लगेंगे।"
+  },
+  {
+   "t": 411.9,
+   "kind": "student_sent",
+   "text": "जी ठीक है।",
+   "source": "improvised"
+  },
+  {
+   "t": 411.9,
+   "kind": "student",
+   "text": "जी ठीक है।"
+  },
+  {
+   "t": 413.8,
+   "kind": "agent",
+   "text": "आपका सीवी अभी भी तैयार हो रहा है। बस"
+  },
+  {
+   "t": 423.8,
+   "kind": "agent",
+   "text": "आपका सीवी तैयार है। कृपया हाईलाइट की गई लाइन्स और अपने नाम की स्पेलिंग चेक करें। आप Keep या Remove पर टैप कर सकते हैं, या मुझे बता सकते हैं कि क्या बदलना है।"
+  },
+  {
+   "t": 427.8,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 200 "
+  }
+ ]
+}

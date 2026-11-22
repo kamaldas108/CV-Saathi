@@ -1,0 +1,784 @@
+{
+ "id": "B5",
+ "run": "r4a",
+ "set": "G",
+ "family": "F1",
+ "lang": "Kannada (script)",
+ "unused_script": [
+  "ಹೌದು.",
+  "ಹೌದು ಸರಿ."
+ ],
+ "draft_facts": [
+  {
+   "id": "c9af3595b4",
+   "field": "full_name",
+   "value": "Prakash Gowda",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಪ್ರಕಾಶ್ ಗೌಡ",
+   "extra": {}
+  },
+  {
+   "id": "c04700d5b1",
+   "field": "phone",
+   "value": "9945012345",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "9945012345",
+   "extra": {}
+  },
+  {
+   "id": "f540e5b30d",
+   "field": "city",
+   "value": "Shivamogga",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಶಿವಮೊಗ್ಗ",
+   "extra": {}
+  },
+  {
+   "id": "0211c02a96",
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್",
+   "extra": {}
+  },
+  {
+   "id": "9820c4bffa",
+   "field": "institute",
+   "value": "Government ITI Shivamogga",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಸರ್ಕಾರಿ ಐಟಿಐ ಶಿವಮೊಗ್ಗ",
+   "extra": {}
+  },
+  {
+   "id": "e0890a94d2",
+   "field": "passing_year",
+   "value": "2021",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "2021",
+   "extra": {}
+  },
+  {
+   "id": "2cc9cdb9c4",
+   "field": "skill",
+   "value": "Repaired electric motors",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "d1d4f97edf",
+   "field": "tool",
+   "value": "Electrical tester",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಟೆಸ್ಟರ್",
+   "extra": {}
+  },
+  {
+   "id": "3a657efcc2",
+   "field": "experience",
+   "value": "Electrician",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್‌ನಲ್ಲಿ ಒಂದು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ",
+   "extra": {
+    "employer": "Sri Ganesh Electricals",
+    "duration": "1 year"
+   }
+  },
+  {
+   "id": "b6e467e2a6",
+   "field": "duty",
+   "value": "Repaired and maintained electric motors",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್‌ನಲ್ಲಿ ಒಂದು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ",
+   "extra": {}
+  },
+  {
+   "id": "9d09de31a4",
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಎನ್‌ಸಿವಿಟಿ ಇದೆ",
+   "extra": {}
+  },
+  {
+   "id": "bbd7e132e9",
+   "field": "language",
+   "value": "Kannada (Native)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಕನ್ನಡ, ಮಾತೃಭಾಷೆ",
+   "extra": {}
+  },
+  {
+   "id": "4541420a2e",
+   "field": "summary",
+   "value": "ITI Electrician with 1 year of experience in electric motor servicing and repair.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್‌ನಲ್ಲಿ ಒಂದು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ.",
+   "extra": {}
+  },
+  {
+   "id": "b698d6ecc0",
+   "field": "skill",
+   "value": "Troubleshooting electric motor faults and defects",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "a0b2241fbf",
+   "field": "skill",
+   "value": "Disassembling and assembling electric motors",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "b2e9a3a712",
+   "field": "skill",
+   "value": "Testing motor connections using electrical tester",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಟೆಸ್ಟರ್.",
+   "extra": {}
+  },
+  {
+   "id": "a48f1e4680",
+   "field": "skill",
+   "value": "Replacing worn bearings, brushes, and motor components",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "23e276bf70",
+   "field": "skill",
+   "value": "Adhering to workshop electrical safety standards",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "b99b4a99c0",
+   "field": "tool",
+   "value": "Combination pliers",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "96d5ec329d",
+   "field": "tool",
+   "value": "Insulated screwdriver set",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "a3a2fbee4c",
+   "field": "tool",
+   "value": "Bearing puller",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "ce22dad6c7",
+   "field": "tool",
+   "value": "Wire stripper",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "dcedfe395c",
+   "field": "duty",
+   "value": "Diagnosed electrical and mechanical faults in faulty electric motors",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾತ್ರ.",
+   "extra": {}
+  },
+  {
+   "id": "2d95785da7",
+   "field": "duty",
+   "value": "Dismantled motors, cleaned components, and fitted replacement parts",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಮೋಟಾರ್ ರಿಪೇರಿ",
+   "extra": {}
+  },
+  {
+   "id": "7ca5e81b0f",
+   "field": "duty",
+   "value": "Checked motor supply and phase continuity using tester after repairs",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಟೆಸ್ಟರ್.",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of full name 'Prakash Gowda'; Spelling of city 'Shivamogga'; Spelling of institute 'Government ITI Shivamogga'; Spelling of employer 'Sri Ganesh Electricals'; 13 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Prakash Gowda",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9945012345",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Shivamogga",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "Government ITI Shivamogga",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2021",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Repaired electric motors",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Electrical tester",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "experience",
+   "value": "Electrician",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {
+    "employer": "Sri Ganesh Electricals",
+    "duration": "1 year"
+   }
+  },
+  {
+   "field": "duty",
+   "value": "Repaired and maintained electric motors",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "Kannada (Native)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 200
+ },
+ "cv_text": "Prakash Gowda\nElectrician\n9945012345 | Shivamogga\n\nAPPRENTICESHIP AND WORK EXPERIENCE\nElectrician\nSri Ganesh Electricals | 1 year\n- Repaired and maintained electric motors\n\nSKILLS\nRepaired electric motors\n\nTOOLS AND EQUIPMENT\nElectrical tester\n\nEDUCATION\nITI - Electrician\nGovernment ITI Shivamogga | Passed 2021\n- NCVT Certificate\n\nLANGUAGES\nKannada (Native)\n",
+ "seconds": 325,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 13.9,
+   "kind": "agent",
+   "text": "Welcome! I'm CV-Saathi, and I'm here to help you build a great CV. This will only take a few minutes. To start, what is your full name?"
+  },
+  {
+   "t": 26.7,
+   "kind": "student_sent",
+   "text": "ಪ್ರಕಾಶ್ ಗೌಡ.",
+   "source": "improvised"
+  },
+  {
+   "t": 26.7,
+   "kind": "student",
+   "text": "ಪ್ರಕಾಶ್ ಗೌಡ."
+  },
+  {
+   "t": 27.5,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 31.3,
+   "kind": "agent",
+   "text": "ಧನ್ಯವಾದ ಪ್ರಕಾಶ್. ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಏನು?"
+  },
+  {
+   "t": 39.2,
+   "kind": "student_sent",
+   "text": "9945012345.",
+   "source": "improvised"
+  },
+  {
+   "t": 39.2,
+   "kind": "student",
+   "text": "9945012345."
+  },
+  {
+   "t": 39.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 45.1,
+   "kind": "agent",
+   "text": "ತುಂಬಾ ಒಳ್ಳೆಯದು. ನೀವು ಯಾವ ನಗರ ಅಥವಾ ಪಟ್ಟಣದಲ್ಲಿ ವಾಸಿಸುತ್ತಿದ್ದೀರಿ?"
+  },
+  {
+   "t": 49.1,
+   "kind": "student_sent",
+   "text": "ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾಡುತ್ತಿದ್ದೆ.",
+   "source": "script"
+  },
+  {
+   "t": 49.1,
+   "kind": "student",
+   "text": "ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾಡುತ್ತಿದ್ದೆ."
+  },
+  {
+   "t": 53.8,
+   "kind": "agent",
+   "text": "It looks like we missed the city. Which city or town are you living in?"
+  },
+  {
+   "t": 62.4,
+   "kind": "student_sent",
+   "text": "ಶಿವಮೊಗ್ಗ.",
+   "source": "improvised"
+  },
+  {
+   "t": 62.4,
+   "kind": "student",
+   "text": "ಶಿವಮೊಗ್ಗ."
+  },
+  {
+   "t": 63.0,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 67.2,
+   "kind": "agent",
+   "text": "ಧನ್ಯವಾದಗಳು. ನೀವು ಯಾವ ಟ್ರೇಡ್‌ನಲ್ಲಿ ಓದಿದ್ದೀರಿ?"
+  },
+  {
+   "t": 74.3,
+   "kind": "student_sent",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "source": "improvised"
+  },
+  {
+   "t": 74.3,
+   "kind": "student",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್."
+  },
+  {
+   "t": 75.0,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 79.2,
+   "kind": "agent",
+   "text": "ಉತ್ತಮ. ನಿಮ್ಮ ಐಟಿಐ ಅಥವಾ ಕಾಲೇಜಿನ ಹೆಸರೇನು?"
+  },
+  {
+   "t": 88.7,
+   "kind": "student_sent",
+   "text": "ಸರ್ಕಾರಿ ಐಟಿಐ ಶಿವಮೊಗ್ಗ.",
+   "source": "improvised"
+  },
+  {
+   "t": 88.7,
+   "kind": "student",
+   "text": "ಸರ್ಕಾರಿ ಐಟಿಐ ಶಿವಮೊಗ್ಗ."
+  },
+  {
+   "t": 89.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 91.5,
+   "kind": "agent",
+   "text": "ಪೂರ್ಣಗೊಂಡ ವರ್ಷ ಯಾವುದು?"
+  },
+  {
+   "t": 100.4,
+   "kind": "student_sent",
+   "text": "2021.",
+   "source": "improvised"
+  },
+  {
+   "t": 100.4,
+   "kind": "student",
+   "text": "2021."
+  },
+  {
+   "t": 101.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 114.5,
+   "kind": "agent",
+   "text": "ಅಭಿನಂದನೆಗಳು! ಈಗ, ನೀವು ಯಾವ ರೀತಿಯ ಕೆಲಸಗಳನ್ನು ಮಾಡಿದ್ದೀರಿ? ಎಲೆಕ್ಟ್ರಿಷಿಯನ್‌ಗಳು ಸಾಮಾನ್ಯವಾಗಿ ವೈರಿಂಗ್, ಪ್ಯಾನಲ್ ಬೋರ್ಡ್ ನಿರ್ವಹಣೆ, ಮತ್ತು ಮೋಟರ್ ರಿಪೇರಿ ಮಾಡುತ್ತಾರೆ. ನೀವು ಇವುಗಳಲ್ಲಿ ಯಾವುದನ್ನು ಮಾಡಿದ್ದೀರಿ?"
+  },
+  {
+   "t": 122.3,
+   "kind": "student_sent",
+   "text": "ಮೋಟಾರ್ ರಿಪೇರಿ.",
+   "source": "improvised"
+  },
+  {
+   "t": 122.3,
+   "kind": "student",
+   "text": "ಮೋಟಾರ್ ರಿಪೇರಿ."
+  },
+  {
+   "t": 122.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 129.0,
+   "kind": "agent",
+   "text": "ಮೋಟಾರ್ ರಿಪೇರಿಯನ್ನು ಉಳಿಸಲಾಗಿದೆ. ನೀವು ವೈರಿಂಗ್ ಅಥವಾ ಬೇರೆ ಏನಾದರೂ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 137.8,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾತ್ರ.",
+   "source": "improvised"
+  },
+  {
+   "t": 137.8,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾತ್ರ."
+  },
+  {
+   "t": 145.9,
+   "kind": "agent",
+   "text": "ಸರಿ, ಮೋಟಾರ್ ರಿಪೇರಿ ಮಾಡುವುದು ಮುಖ್ಯವಾದ ಕೆಲಸ. ನೀವು ಯಾವ ಮಲ್ಟಿಮೀಟರ್ ಅಥವಾ ಟೆಸ್ಟಿಂಗ್ ಪರಿಕರಗಳನ್ನು ಬಳಸುತ್ತೀರಿ?"
+  },
+  {
+   "t": 152.8,
+   "kind": "student_sent",
+   "text": "ಟೆಸ್ಟರ್.",
+   "source": "improvised"
+  },
+  {
+   "t": 152.8,
+   "kind": "student",
+   "text": "ಟೆಸ್ಟರ್."
+  },
+  {
+   "t": 153.5,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 160.2,
+   "kind": "agent",
+   "text": "ಟೆಸ್ಟರ್ ಅನ್ನು ಉಳಿಸಲಾಗಿದೆ. ನೀವು ಬೇರೆ ಯಾವುದಾದರೂ ಉಪಕರಣ ಬಳಸುತ್ತೀರಾ, ಉದಾಹರಣೆಗೆ ಮಲ್ಟಿಮೀಟರ್?"
+  },
+  {
+   "t": 168.4,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಬೇರೆ ಇಲ್ಲ.",
+   "source": "improvised"
+  },
+  {
+   "t": 168.4,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಬೇರೆ ಇಲ್ಲ."
+  },
+  {
+   "t": 173.4,
+   "kind": "agent",
+   "text": "ಸರಿ. ನೀವು ಎಲ್ಲಿಯಾದರೂ ಅಪ್ರೆಂಟಿಸ್ಶಿಪ್ ಅಥವಾ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 181.7,
+   "kind": "student_sent",
+   "text": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್‌ನಲ್ಲಿ ಒಂದು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 181.7,
+   "kind": "student",
+   "text": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್‌ನಲ್ಲಿ ಒಂದು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ."
+  },
+  {
+   "t": 182.4,
+   "kind": "tool",
+   "name": "add_experience",
+   "ok": true,
+   "message": "Saved. Confirm the employer's spelling with confirm_spelling, target = this experience_id."
+  },
+  {
+   "t": 183.1,
+   "kind": "tool",
+   "name": "confirm_spelling",
+   "ok": false,
+   "message": "Not confirmed: the student neither spelled out this exact spelling nor said yes to you reading exactly this spelling back. Read the full spelling back once, letter by letter, and pass the student's yes as evidence."
+  },
+  {
+   "t": 196.9,
+   "kind": "agent",
+   "text": "ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್, ಇದರಲ್ಲಿ 'ಶ್ರೀ ಗಣೇಶ್ ಎಲೆಕ್ಟ್ರಿಕಲ್ಸ್' ಅನ್ನು ಹೀಗೆ ಕಾಗುಣಿತ ಮಾಡಲಾಗಿದೆಯೇ? ಎಸ್-ಆರ್-ಐ ಜಿ-ಎ-ಎನ್-ಇ-ಎಸ್-ಎಚ್ ಇ-ಎಲ್-ಇ-ಸಿ-ಟಿ-ಆರ್-ಐ-ಸಿ-ಎ-ಎಲ್-ಎಸ್?"
+  },
+  {
+   "t": 217.5,
+   "kind": "student_sent",
+   "text": "ಹೌದು, ಸರಿ.",
+   "source": "improvised"
+  },
+  {
+   "t": 217.5,
+   "kind": "student",
+   "text": "ಹೌದು, ಸರಿ."
+  },
+  {
+   "t": 218.3,
+   "kind": "tool",
+   "name": "add_duty",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 227.5,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದಾದರೂ ಪ್ರಮಾಣಪತ್ರಗಳಿವೆಯೇ? ಉದಾಹರಣೆಗೆ ಎನ್‌ಸಿವಿಟಿ ಅಥವಾ ಎಸ್‌ಸಿವಿಟಿ ಐಟಿಐ ಸರ್ಟಿಫಿಕೇಟ್?"
+  },
+  {
+   "t": 236.5,
+   "kind": "student_sent",
+   "text": "ಎನ್‌ಸಿವಿಟಿ ಇದೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 236.5,
+   "kind": "student",
+   "text": "ಎನ್‌ಸಿವಿಟಿ ಇದೆ."
+  },
+  {
+   "t": 237.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 245.7,
+   "kind": "agent",
+   "text": "ನೀವು ಯಾವ ಭಾಷೆಗಳನ್ನು ಮಾತನಾಡುತ್ತೀರಿ ಮತ್ತು ಅವುಗಳನ್ನು ಹೇಗೆ ಮಾತನಾಡುತ್ತೀರಿ, ಉದಾಹರಣೆಗೆ ಮೂಲಭೂತ ಅಥವಾ ನಿರರ್ಗಳವಾಗಿ?"
+  },
+  {
+   "t": 254.9,
+   "kind": "student_sent",
+   "text": "ಕನ್ನಡ, ಮಾತೃಭಾಷೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 254.9,
+   "kind": "student",
+   "text": "ಕನ್ನಡ, ಮಾತೃಭಾಷೆ."
+  },
+  {
+   "t": 255.5,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 259.1,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿಗೆ ಸೇರಿಸಲು ಬೇರೆ ಏನಾದರೂ ಇದೆಯೇ?"
+  },
+  {
+   "t": 275.6,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಅಷ್ಟೇ.",
+   "source": "improvised"
+  },
+  {
+   "t": 275.6,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಅಷ್ಟೇ."
+  },
+  {
+   "t": 276.2,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": true,
+   "message": "Drafting started. Tell the student you are writing their CV and it takes about 20 seconds. Do NOT say the draft is ready until the app's notice arrives; if the student speaks meanwhile, say it is still being written."
+  },
+  {
+   "t": 282.7,
+   "kind": "agent",
+   "text": "ಬಿವಿ ನಾನು ಈಗ ನಿಮ್ಮ ಸಿವಿಯನ್ನು ರಚಿಸುತ್ತಿದ್ದೇನೆ. ಇದು ಸುಮಾರು 20 ಸೆಕೆಂಡುಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ."
+  },
+  {
+   "t": 289.3,
+   "kind": "student_sent",
+   "text": "ಸರಿ, ಆಯಿತು.",
+   "source": "improvised"
+  },
+  {
+   "t": 289.3,
+   "kind": "student",
+   "text": "ಸರಿ, ಆಯಿತು."
+  },
+  {
+   "t": 293.9,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿ ಸಿದ್ಧವಾಗುತ್ತಿದೆ, ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಸಮಯ ಕಾಯಿರಿ."
+  },
+  {
+   "t": 302.6,
+   "kind": "student_sent",
+   "text": "ಸರಿ, ಕಾಯುತ್ತೇನೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 302.6,
+   "kind": "student",
+   "text": "ಸರಿ, ಕಾಯುತ್ತೇನೆ."
+  },
+  {
+   "t": 302.8,
+   "kind": "agent",
+   "text": "Here is your draft CV. Please check the highlighted lines"
+  },
+  {
+   "t": 312.9,
+   "kind": "agent",
+   "text": "ದಯವಿಟ್ಟು ಹೈಲೈಟ್ ಮಾಡಲಾದ ಸಾಲುಗಳು ಮತ್ತು ನಿಮ್ಮ ಹೆಸರನ್ನು ಪರಿಶೀಲಿಸಿ. ನೀವು 'Keep' ಅಥವಾ 'Remove' ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಬಹುದು ಅಥವಾ ಬದಲಾವಣೆಗಳನ್ನು ನನಗೆ ತಿಳಿಸಬಹುದು."
+  },
+  {
+   "t": 317.0,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 200 "
+  }
+ ]
+}

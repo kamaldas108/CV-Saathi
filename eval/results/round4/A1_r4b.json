@@ -1,0 +1,896 @@
+{
+ "id": "A1",
+ "run": "r4b",
+ "set": "G",
+ "family": "F1",
+ "lang": "Kannada (script)",
+ "unused_script": [],
+ "draft_facts": [
+  {
+   "id": "cc60a25707",
+   "field": "full_name",
+   "value": "Ramesh Kumar",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್.",
+   "extra": {}
+  },
+  {
+   "id": "e468ec774e",
+   "field": "phone",
+   "value": "9845098450",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ನನ್ನ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ 9845098450.",
+   "extra": {}
+  },
+  {
+   "id": "92b42a0171",
+   "field": "city",
+   "value": "Tumakuru",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ನನ್ನ ಊರು ತುಮಕೂರು.",
+   "extra": {}
+  },
+  {
+   "id": "06ad9390af",
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "ab8d048af9",
+   "field": "institute",
+   "value": "Government ITI Tumakuru",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಸರ್ಕಾರಿ ಐಟಿಐ ತುಮಕೂರು.",
+   "extra": {}
+  },
+  {
+   "id": "eb39622b16",
+   "field": "passing_year",
+   "value": "2022",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "2022 ರಲ್ಲಿ.",
+   "extra": {}
+  },
+  {
+   "id": "ecdaba2bdf",
+   "field": "experience",
+   "value": "Apprentice",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "ಹೌದು, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ.",
+   "extra": {
+    "employer": "KPTCL",
+    "duration": "2 years"
+   }
+  },
+  {
+   "id": "2ee6bc287d",
+   "field": "duty",
+   "value": "Assisted with transformer maintenance",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "bac440360c",
+   "field": "duty",
+   "value": "Identified line faults",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "56fe20153d",
+   "field": "tool",
+   "value": "Multimeter",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಹೌದು, ಮಲ್ಟಿಮೀಟರ್ ಮತ್ತು ಟೆಸ್ಟರ್ ಬಳಸಿದ್ದೇನೆ.",
+   "extra": {}
+  },
+  {
+   "id": "0d70cc832e",
+   "field": "tool",
+   "value": "Tester",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಹೌದು, ಮಲ್ಟಿಮೀಟರ್ ಮತ್ತು ಟೆಸ್ಟರ್ ಬಳಸಿದ್ದೇನೆ.",
+   "extra": {}
+  },
+  {
+   "id": "230398fe7d",
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಹೌದು, NCVT ಸರ್ಟಿಫಿಕೇಟ್ ಇದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "ca9451e3af",
+   "field": "language",
+   "value": "Kannada (Native)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಕನ್ನಡ ಮಾತೃಭಾಷೆ, ಇಂಗ್ಲಿಷ್ ಸ್ವಲ್ಪ ಬರುತ್ತೆ.",
+   "extra": {}
+  },
+  {
+   "id": "db9a98ed83",
+   "field": "language",
+   "value": "English (Basic)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಕನ್ನಡ ಮಾತೃಭಾಷೆ, ಇಂಗ್ಲಿಷ್ ಸ್ವಲ್ಪ ಬರುತ್ತೆ.",
+   "extra": {}
+  },
+  {
+   "id": "e194cbbe69",
+   "field": "skill",
+   "value": "Electrical maintenance",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "ಹೌದು, ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೈನ್ಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡಿದ್ದೇನೆ.",
+   "extra": {}
+  },
+  {
+   "id": "5f96b6d341",
+   "field": "summary",
+   "value": "ITI Electrician with 2 years of apprenticeship experience at KPTCL.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ.",
+   "extra": {}
+  },
+  {
+   "id": "ba5a1ef3df",
+   "field": "duty",
+   "value": "Assisted senior technicians with regular inspection and servicing of transformers",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "18fa645435",
+   "field": "duty",
+   "value": "Inspected power lines to identify and locate electrical faults",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "fa542f7438",
+   "field": "skill",
+   "value": "Transformer inspection and servicing",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೆಂಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "27cc62460e",
+   "field": "skill",
+   "value": "Power line fault detection",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕುತ್ತಿದ್ದೆ.",
+   "extra": {}
+  },
+  {
+   "id": "d67d410015",
+   "field": "skill",
+   "value": "Electrical safety and earthing checks",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "197606a288",
+   "field": "skill",
+   "value": "Insulation resistance testing",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "f1018fbed0",
+   "field": "tool",
+   "value": "Megger (Insulation Tester)",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "a293535b28",
+   "field": "tool",
+   "value": "Insulated pliers",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "763a56c40d",
+   "field": "tool",
+   "value": "Wire stripper",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  },
+  {
+   "id": "ebb211c2ce",
+   "field": "tool",
+   "value": "Screwdriver set",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of full name 'Ramesh Kumar'; Spelling of city 'Tumakuru'; Spelling of institute 'Government ITI Tumakuru'; Spelling of employer 'KPTCL'; 11 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Ramesh Kumar",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9845098450",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Tumakuru",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Electrician",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "Government ITI Tumakuru",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2022",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "experience",
+   "value": "Apprentice",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {
+    "employer": "KPTCL",
+    "duration": "2 years"
+   }
+  },
+  {
+   "field": "duty",
+   "value": "Assisted with transformer maintenance",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "duty",
+   "value": "Identified line faults",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Multimeter",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "tool",
+   "value": "Tester",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "Kannada (Native)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "English (Basic)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "skill",
+   "value": "Electrical maintenance",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 200
+ },
+ "cv_text": "Ramesh Kumar\nElectrician\n9845098450 | Tumakuru\n\nAPPRENTICESHIP AND WORK EXPERIENCE\nApprentice\nKPTCL | 2 years\n- Assisted with transformer maintenance\n- Identified line faults\n\nSKILLS\nElectrical maintenance\n\nTOOLS AND EQUIPMENT\nMultimeter, Tester\n\nEDUCATION\nITI - Electrician\nGovernment ITI Tumakuru | Passed 2022\n- NCVT Certificate\n\nLANGUAGES\nKannada (Native), English (Basic)\n",
+ "seconds": 345,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 14.2,
+   "kind": "agent",
+   "text": "Hello! I'm CV-Saathi. I'll help you build a great one-page English CV in just a few minutes. Let's start with your full name. What is your name?"
+  },
+  {
+   "t": 25.6,
+   "kind": "student_sent",
+   "text": "ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್.",
+   "source": "script"
+  },
+  {
+   "t": 25.6,
+   "kind": "student",
+   "text": "ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್."
+  },
+  {
+   "t": 26.3,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 30.1,
+   "kind": "agent",
+   "text": "Ramesh Kumar. ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಏನು?"
+  },
+  {
+   "t": 34.2,
+   "kind": "student_sent",
+   "text": "ನಾನು ಐಟಿಐನಲ್ಲಿ ಎಲೆಕ್ಟ್ರಿಷಿಯನ್ ಟ್ರೇಡ್ ಮಾಡಿದ್ದೇನೆ.",
+   "source": "script"
+  },
+  {
+   "t": 34.2,
+   "kind": "student",
+   "text": "ನಾನು ಐಟಿಐನಲ್ಲಿ ಎಲೆಕ್ಟ್ರಿಷಿಯನ್ ಟ್ರೇಡ್ ಮಾಡಿದ್ದೇನೆ."
+  },
+  {
+   "t": 41.6,
+   "kind": "agent",
+   "text": "ಧನ್ಯವಾದಗಳು! ಆದರೆ ನಾನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ಕೇಳಿದ್ದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ಹೇಳುತ್ತೀರಾ?"
+  },
+  {
+   "t": 45.6,
+   "kind": "student_sent",
+   "text": "ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ.",
+   "source": "script"
+  },
+  {
+   "t": 45.6,
+   "kind": "student",
+   "text": "ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ."
+  },
+  {
+   "t": 51.8,
+   "kind": "agent",
+   "text": "Apprenticeship details are great, but first I need your mobile number. What is your mobile number?"
+  },
+  {
+   "t": 55.9,
+   "kind": "student_sent",
+   "text": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೆಂಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೆ.",
+   "source": "script"
+  },
+  {
+   "t": 55.9,
+   "kind": "student",
+   "text": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೆಂಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೆ."
+  },
+  {
+   "t": 63.6,
+   "kind": "agent",
+   "text": "Your experience sounds very good. But first, I still need your mobile number for the CV. Could you please tell me your mobile number?"
+  },
+  {
+   "t": 67.7,
+   "kind": "student_sent",
+   "text": "ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕುತ್ತಿದ್ದೆ.",
+   "source": "script"
+  },
+  {
+   "t": 67.7,
+   "kind": "student",
+   "text": "ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕುತ್ತಿದ್ದೆ."
+  },
+  {
+   "t": 73.8,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಕೆಲಸದ ಅನುಭವ ಉತ್ತಮವಾಗಿದೆ. ಆದರೆ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ಹೇಳುತ್ತೀರಾ?"
+  },
+  {
+   "t": 81.4,
+   "kind": "student_sent",
+   "text": "ನನ್ನ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ 9845098450.",
+   "source": "improvised"
+  },
+  {
+   "t": 81.4,
+   "kind": "student",
+   "text": "ನನ್ನ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ 9845098450."
+  },
+  {
+   "t": 82.0,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 85.2,
+   "kind": "agent",
+   "text": "ಧನ್ಯವಾದಗಳು. ನಿಮ್ಮ ಊರು ಯಾವುದು?"
+  },
+  {
+   "t": 92.0,
+   "kind": "student_sent",
+   "text": "ನನ್ನ ಊರು ತುಮಕೂರು.",
+   "source": "improvised"
+  },
+  {
+   "t": 92.0,
+   "kind": "student",
+   "text": "ನನ್ನ ಊರು ತುಮಕೂರು."
+  },
+  {
+   "t": 92.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 95.6,
+   "kind": "agent",
+   "text": "ತುಮಕೂರು. ನಿಮ್ಮ ಟ್ರೇಡ್ ಯಾವುದು?"
+  },
+  {
+   "t": 103.1,
+   "kind": "student_sent",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್.",
+   "source": "improvised"
+  },
+  {
+   "t": 103.1,
+   "kind": "student",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್."
+  },
+  {
+   "t": 103.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 107.8,
+   "kind": "agent",
+   "text": "Electrician. ನಿಮ್ಮ ಐಟಿಐ ಕಾಲೇಜಿನ ಹೆಸರು ಏನು?"
+  },
+  {
+   "t": 116.2,
+   "kind": "student_sent",
+   "text": "ಸರ್ಕಾರಿ ಐಟಿಐ ತುಮಕೂರು.",
+   "source": "improvised"
+  },
+  {
+   "t": 116.2,
+   "kind": "student",
+   "text": "ಸರ್ಕಾರಿ ಐಟಿಐ ತುಮಕೂರು."
+  },
+  {
+   "t": 116.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 121.8,
+   "kind": "agent",
+   "text": "Government ITI Tumakuru. ನೀವು ಯಾವ ವರ್ಷ ಉತ್ತೀರ್ಣರಾದಿರಿ?"
+  },
+  {
+   "t": 129.2,
+   "kind": "student_sent",
+   "text": "2022 ರಲ್ಲಿ.",
+   "source": "improvised"
+  },
+  {
+   "t": 129.2,
+   "kind": "student",
+   "text": "2022 ರಲ್ಲಿ."
+  },
+  {
+   "t": 129.8,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 137.1,
+   "kind": "agent",
+   "text": "ಧನ್ಯವಾದಗಳು. ಈಗ ನಿಮ್ಮ ಕೆಲಸದ ಅನುಭವದ ಬಗ್ಗೆ ಹೇಳಿ. ನೀವು ಎಲ್ಲಾದರೂ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 144.8,
+   "kind": "student_sent",
+   "text": "ಹೌದು, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 144.8,
+   "kind": "student",
+   "text": "ಹೌದು, ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೇನೆ."
+  },
+  {
+   "t": 145.5,
+   "kind": "tool",
+   "name": "add_experience",
+   "ok": true,
+   "message": "Saved. Confirm the employer's spelling with confirm_spelling, target = this experience_id."
+  },
+  {
+   "t": 149.1,
+   "kind": "agent",
+   "text": "Great. What duties did you perform there?"
+  },
+  {
+   "t": 168.1,
+   "kind": "student_sent",
+   "text": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 168.1,
+   "kind": "student",
+   "text": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸಹಾಯ ಮಾಡ್ತಿದ್ದೆ ಮತ್ತು ಲೈನ್ ಫಾಲ್ಟ್ ಹುಡುಕ್ತಿದ್ದೆ."
+  },
+  {
+   "t": 168.9,
+   "kind": "tool",
+   "name": "add_duty",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 168.9,
+   "kind": "tool",
+   "name": "add_duty",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 180.9,
+   "kind": "agent",
+   "text": "ವಿದ್ಯುತ್‌ ತಂತ್ರಜ್ಞರು ಸಾಮಾನ್ಯವಾಗಿ ವೈರಿಂಗ್, ಮಲ್ಟಿ-ಮೀಟರ್ ಬಳಸುವುದು ಮತ್ತು ವೈರ್ ಸ್ಟ್ರಿಪ್ಪರ್‌ಗಳನ್ನು ಬಳಸುವುದು ಮುಂತಾದ ಕೆಲಸಗಳನ್ನು ಮಾಡುತ್ತಾರೆ. ನೀವು ಇವುಗಳಲ್ಲಿ ಯಾವುದಾದರೂ ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 189.0,
+   "kind": "student_sent",
+   "text": "ಹೌದು, ಮಲ್ಟಿಮೀಟರ್ ಮತ್ತು ಟೆಸ್ಟರ್ ಬಳಸಿದ್ದೇನೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 189.0,
+   "kind": "student",
+   "text": "ಹೌದು, ಮಲ್ಟಿಮೀಟರ್ ಮತ್ತು ಟೆಸ್ಟರ್ ಬಳಸಿದ್ದೇನೆ."
+  },
+  {
+   "t": 189.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 189.7,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 193.3,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದಾದರೂ ಹೆಚ್ಚುವರಿ ಸರ್ಟಿಫಿಕೇಟ್ ಇದೆಯೇ?"
+  },
+  {
+   "t": 200.3,
+   "kind": "student_sent",
+   "text": "ಹೌದು, NCVT ಸರ್ಟಿಫಿಕೇಟ್ ಇದೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 200.3,
+   "kind": "student",
+   "text": "ಹೌದು, NCVT ಸರ್ಟಿಫಿಕೇಟ್ ಇದೆ."
+  },
+  {
+   "t": 200.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 206.8,
+   "kind": "agent",
+   "text": "ನೀವು ಯಾವ ಭಾಷೆಗಳನ್ನು ಮಾತನಾಡಬಲ್ಲಿರಿ ಮತ್ತು ಅವುಗಳನ್ನು ಎಷ್ಟು ಚೆನ್ನಾಗಿ ಮಾತನಾಡುತ್ತೀರಿ?"
+  },
+  {
+   "t": 215.1,
+   "kind": "student_sent",
+   "text": "ಕನ್ನಡ ಮಾತೃಭಾಷೆ, ಇಂಗ್ಲಿಷ್ ಸ್ವಲ್ಪ ಬರುತ್ತೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 215.1,
+   "kind": "student",
+   "text": "ಕನ್ನಡ ಮಾತೃಭಾಷೆ, ಇಂಗ್ಲಿಷ್ ಸ್ವಲ್ಪ ಬರುತ್ತೆ."
+  },
+  {
+   "t": 215.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 215.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 219.7,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿಗೆ ನೀವು ಏನಾದರೂ ಸೇರಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+  },
+  {
+   "t": 227.5,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಬೇರೇನೂ ಇಲ್ಲ.",
+   "source": "improvised"
+  },
+  {
+   "t": 227.5,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಬೇರೇನೂ ಇಲ್ಲ."
+  },
+  {
+   "t": 228.1,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": false,
+   "message": "Not yet: first ask for at least one skill."
+  },
+  {
+   "t": 233.5,
+   "kind": "agent",
+   "text": "ವಿದ್ಯುತ್ ತಂತ್ರಜ್ಞರಾಗಿ ನೀವು ವೈರಿಂಗ್ ಅಥವಾ ರಿಪೇರಿ ಕೆಲಸಗಳನ್ನು ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 242.9,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಮಾಡಿಲ್ಲ.",
+   "source": "improvised"
+  },
+  {
+   "t": 242.9,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಮಾಡಿಲ್ಲ."
+  },
+  {
+   "t": 249.4,
+   "kind": "agent",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್ ಆಗಿ ಸಾಮಾನ್ಯವಾಗಿ ಪ್ಯಾನೆಲ್ ವೈರಿಂಗ್ ಕೆಲಸ ಮಾಡಲಾಗುತ್ತದೆ. ನೀವು ಇದನ್ನು ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 258.2,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ಮಾಡಿಲ್ಲ.",
+   "source": "improvised"
+  },
+  {
+   "t": 258.2,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ಮಾಡಿಲ್ಲ."
+  },
+  {
+   "t": 266.8,
+   "kind": "agent",
+   "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್ ಆಗಿ ಸಾಮಾನ್ಯವಾಗಿ ಮೋಟಾರ್ ಮೈನ್ಟೆನೆನ್ಸ್ ಕೆಲಸ ಮಾಡಲಾಗುತ್ತದೆ. ನೀವು ಇದನ್ನು ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 273.8,
+   "kind": "student_sent",
+   "text": "ಇಲ್ಲ, ನಾನು ಮಾಡಿಲ್ಲ.",
+   "source": "improvised"
+  },
+  {
+   "t": 273.8,
+   "kind": "student",
+   "text": "ಇಲ್ಲ, ನಾನು ಮಾಡಿಲ್ಲ."
+  },
+  {
+   "t": 282.1,
+   "kind": "agent",
+   "text": "ವಿದ್ಯುತ್‌ ತಂತ್ರಜ್ಞರು ಸಾಮಾನ್ಯವಾಗಿ ಎಲೆಕ್ಟ್ರಿಕಲ್ ಮೈನ್ಟೆನೆನ್ಸ್ ಕೆಲಸಗಳನ್ನು ಮಾಡುತ್ತಾರೆ. ನೀವು ಎಲೆಕ್ಟ್ರಿಕಲ್ ಮೈನ್ಟೆನೆನ್ಸ್ ಮಾಡಿದ್ದೀರಾ?"
+  },
+  {
+   "t": 292.3,
+   "kind": "student_sent",
+   "text": "ಹೌದು, ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೈನ್ಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡಿದ್ದೇನೆ.",
+   "source": "improvised"
+  },
+  {
+   "t": 292.3,
+   "kind": "student",
+   "text": "ಹೌದು, ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮೈನ್ಟೆನೆನ್ಸ್‌ನಲ್ಲಿ ಸಹಾಯ ಮಾಡಿದ್ದೇನೆ."
+  },
+  {
+   "t": 293.0,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 293.5,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": true,
+   "message": "Drafting started. Tell the student you are writing their CV and it takes about 20 seconds. Do NOT say the draft is ready until the app's notice arrives; if the student speaks meanwhile, say it is still being written."
+  },
+  {
+   "t": 299.5,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿಯನ್ನು ಸಿದ್ಧಪಡಿಸುತ್ತಿದ್ದೇನೆ. ಇದಕ್ಕೆ ಸುಮಾರು 20 ಸೆಕೆಂಡುಗಳು ಬೇಕಾಗುತ್ತವೆ."
+  },
+  {
+   "t": 305.9,
+   "kind": "student_sent",
+   "text": "ಸರಿ, ಆಯಿತು.",
+   "source": "improvised"
+  },
+  {
+   "t": 305.9,
+   "kind": "student",
+   "text": "ಸರಿ, ಆಯಿತು."
+  },
+  {
+   "t": 309.9,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿ ತಯಾರಾಗುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕಾಯಿರಿ."
+  },
+  {
+   "t": 318.6,
+   "kind": "student_sent",
+   "text": "ಸರಿ, ಕಾಯ್ತೀನಿ.",
+   "source": "improvised"
+  },
+  {
+   "t": 318.6,
+   "kind": "student",
+   "text": "ಸರಿ, ಕಾಯ್ತೀನಿ."
+  },
+  {
+   "t": 321.0,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿ ತಯಾರಾಗುತ್ತಿದೆ. ದಯವಿಟ್ಟು"
+  },
+  {
+   "t": 333.3,
+   "kind": "agent",
+   "text": "ನಿಮ್ಮ ಸಿವಿ ಸಿದ್ಧವಾಗಿದೆ. ದಯವಿಟ್ಟು ಹೈಲೈಟ್ ಮಾಡಲಾದ ಸಾಲುಗಳು ಮತ್ತು ನಿಮ್ಮ ಹೆಸರಿನ ಕಾಗುಣಿತವನ್ನು ಪರಿಶೀಲಿಸಿ. ಕೀಪ್ ಅಥವಾ ರಿಮೂವ್ ಟ್ಯಾಪ್ ಮಾಡಿ, ಇಲ್ಲವೇ ಏನು ಬದಲಾಯಿಸಬೇಕೆಂದು ನನಗೆ ತಿಳಿಸಿ."
+  },
+  {
+   "t": 337.4,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 200 "
+  }
+ ]
+}

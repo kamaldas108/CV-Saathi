@@ -1,0 +1,857 @@
+{
+ "id": "B6",
+ "run": "r4a",
+ "set": "P",
+ "family": null,
+ "lang": "Hindi (script)",
+ "unused_script": [],
+ "draft_facts": [
+  {
+   "id": "666b8513bc",
+   "field": "full_name",
+   "value": "Mohan Lal",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मेरा नाम मोहन लाल है",
+   "extra": {}
+  },
+  {
+   "id": "67c852a3e1",
+   "field": "phone",
+   "value": "9935012345",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मेरा नंबर 9935012345 है",
+   "extra": {}
+  },
+  {
+   "id": "b662ac68cc",
+   "field": "city",
+   "value": "Prayagraj",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मैं प्रयागराज में रहता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "57ac75f19d",
+   "field": "trade",
+   "value": "Fitter",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "1fd9e2670f",
+   "field": "qualification",
+   "value": "ITI Fitter",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "a84192ef62",
+   "field": "institute",
+   "value": "ITI Prayagraj",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मैंने आईटीआई प्रयागराज से किया है।",
+   "extra": {}
+  },
+  {
+   "id": "74c24c7bdb",
+   "field": "passing_year",
+   "value": "2021",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "2021 में पास किया",
+   "extra": {}
+  },
+  {
+   "id": "314387f7ea",
+   "field": "skill",
+   "value": "Performed fitting work",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटिंग और असेंबली का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "33c2af5d90",
+   "field": "skill",
+   "value": "Managed component assembly",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटिंग और असेंबली का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "78dee3a0e0",
+   "field": "tool",
+   "value": "File",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैं फाइल और ड्रिल चला लेता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "04320ca125",
+   "field": "tool",
+   "value": "Drill machine",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैं फाइल और ड्रिल चला लेता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "828f789a57",
+   "field": "experience",
+   "value": "Fitter",
+   "status": "needs_spelling",
+   "source": "interview",
+   "evidence": "मैंने भारत इंजीनियरिंग वर्क्स में काम किया है। | मैंने वहाँ फिटर के पद पर काम किया।",
+   "extra": {
+    "employer": "Bharat Engineering Works",
+    "duration": ""
+   }
+  },
+  {
+   "id": "9f8fca1657",
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "हाँ, NCVT सर्टिफिकेट है।",
+   "extra": {}
+  },
+  {
+   "id": "21fd707e39",
+   "field": "language",
+   "value": "Hindi (Native)",
+   "status": "draft",
+   "source": "interview",
+   "evidence": "मुझे हिंदी आती है, यह मेरी मातृभाषा है।",
+   "extra": {}
+  },
+  {
+   "id": "3615e83c3b",
+   "field": "skill",
+   "value": "Measuring and marking workpieces accurately",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "2c0ff5b4d7",
+   "field": "skill",
+   "value": "Reading engineering drawings and specifications",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "f53b6b8b2d",
+   "field": "skill",
+   "value": "Filing, cutting, and shaping metal components",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैं फाइल और ड्रिल चला लेता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "9f7fcd2913",
+   "field": "skill",
+   "value": "Performing maintenance and inspection on workshop machinery",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "d56a658aa8",
+   "field": "tool",
+   "value": "Vernier caliper",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "bca0e79c63",
+   "field": "tool",
+   "value": "Micrometer",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "ad6797df7a",
+   "field": "tool",
+   "value": "Hacksaw",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "05bb0744b0",
+   "field": "tool",
+   "value": "Bench vice",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटर ट्रेड किया है।",
+   "extra": {}
+  },
+  {
+   "id": "32ec91e9f9",
+   "field": "duty",
+   "value": "Carried out fitting and assembly of mechanical parts at Bharat Engineering Works",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटिंग और असेंबली का काम किया है।",
+   "extra": {}
+  },
+  {
+   "id": "7e35c719a2",
+   "field": "duty",
+   "value": "Operated drill machines and used files to finish metal components",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैं फाइल और ड्रिल चला लेता हूँ।",
+   "extra": {}
+  },
+  {
+   "id": "67f88e398d",
+   "field": "summary",
+   "value": "Skilled in mechanical fitting, component assembly, filing, and drilling operations.",
+   "status": "suggested",
+   "source": "agent_draft",
+   "evidence": "मैंने फिटिंग और असेंबली का काम किया है।",
+   "extra": {}
+  }
+ ],
+ "checklist": [
+  {
+   "key": "full_name",
+   "label": "Full name",
+   "done": true
+  },
+  {
+   "key": "contact",
+   "label": "Phone or email",
+   "done": true
+  },
+  {
+   "key": "city",
+   "label": "City or town",
+   "done": true
+  },
+  {
+   "key": "trade",
+   "label": "Trade",
+   "done": true
+  },
+  {
+   "key": "institute",
+   "label": "Institute",
+   "done": true
+  },
+  {
+   "key": "passing_year",
+   "label": "Year of passing",
+   "done": true
+  },
+  {
+   "key": "skill",
+   "label": "At least one skill",
+   "done": true
+  }
+ ],
+ "export_before_check": {
+  "status": 409,
+  "detail": "Not ready to export: Spelling of full name 'Mohan Lal'; Spelling of city 'Prayagraj'; Spelling of institute 'ITI Prayagraj'; Spelling of employer 'Bharat Engineering Works'; 15 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+ },
+ "final_facts": [
+  {
+   "field": "full_name",
+   "value": "Mohan Lal",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "phone",
+   "value": "9935012345",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "city",
+   "value": "Prayagraj",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "trade",
+   "value": "Fitter",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "qualification",
+   "value": "ITI Fitter",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "institute",
+   "value": "ITI Prayagraj",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "passing_year",
+   "value": "2021",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "experience",
+   "value": "Fitter",
+   "status": "confirmed",
+   "source": "interview",
+   "extra": {
+    "employer": "Bharat Engineering Works",
+    "duration": ""
+   }
+  },
+  {
+   "field": "certification",
+   "value": "NCVT Certificate",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  },
+  {
+   "field": "language",
+   "value": "Hindi (Native)",
+   "status": "draft",
+   "source": "interview",
+   "extra": {}
+  }
+ ],
+ "export_final": {
+  "status": 409,
+  "detail": "Not ready to export: Missing: At least one skill; The student has not reviewed the full CV yet"
+ },
+ "seconds": 353,
+ "log": [
+  {
+   "t": 0.1,
+   "kind": "note",
+   "text": "connected"
+  },
+  {
+   "t": 13.6,
+   "kind": "agent",
+   "text": "Hello! I'm here to help you build a great one-page CV in just a few minutes. To get started, could you please tell me your full name?"
+  },
+  {
+   "t": 24.8,
+   "kind": "student_sent",
+   "text": "मेरा नाम मोहन लाल है।",
+   "source": "improvised"
+  },
+  {
+   "t": 24.8,
+   "kind": "student",
+   "text": "मेरा नाम मोहन लाल है।"
+  },
+  {
+   "t": 25.4,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 29.0,
+   "kind": "agent",
+   "text": "Thank you, Mohan Lal. What is your mobile number?"
+  },
+  {
+   "t": 40.2,
+   "kind": "student_sent",
+   "text": "मेरा नंबर 9935012345 है।",
+   "source": "improvised"
+  },
+  {
+   "t": 40.2,
+   "kind": "student",
+   "text": "मेरा नंबर 9935012345 है।"
+  },
+  {
+   "t": 40.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 44.3,
+   "kind": "agent",
+   "text": "Got it. Which city or town do you live in?"
+  },
+  {
+   "t": 48.3,
+   "kind": "student_sent",
+   "text": "साढ़े तीन साल काम किया है।",
+   "source": "script"
+  },
+  {
+   "t": 48.3,
+   "kind": "student",
+   "text": "साढ़े तीन साल काम किया है।"
+  },
+  {
+   "t": 55.6,
+   "kind": "agent",
+   "text": "I understand you have experience, but first I need to know your city or town for the CV. Which city are you living in?"
+  },
+  {
+   "t": 59.6,
+   "kind": "student_sent",
+   "text": "हफ्ते में छह दिन।",
+   "source": "script"
+  },
+  {
+   "t": 59.6,
+   "kind": "student",
+   "text": "हफ्ते में छह दिन।"
+  },
+  {
+   "t": 62.8,
+   "kind": "agent",
+   "text": "आप किस शहर या कस्बे में रहते हैं?"
+  },
+  {
+   "t": 66.8,
+   "kind": "student_sent",
+   "text": "दो हज़ार बाईस में शुरू किया।",
+   "source": "script"
+  },
+  {
+   "t": 66.8,
+   "kind": "student",
+   "text": "दो हज़ार बाईस में शुरू किया।"
+  },
+  {
+   "t": 74.4,
+   "kind": "agent",
+   "text": "मैं समझ गया हूँ कि आपने पहले काम किया है, पर अभी मुझे आपके शहर या कस्बे का नाम चाहिए। आप कहाँ रहते हैं?"
+  },
+  {
+   "t": 81.3,
+   "kind": "student_sent",
+   "text": "मैं प्रयागराज में रहता हूँ।",
+   "source": "improvised"
+  },
+  {
+   "t": 81.3,
+   "kind": "student",
+   "text": "मैं प्रयागराज में रहता हूँ।"
+  },
+  {
+   "t": 81.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 88.2,
+   "kind": "agent",
+   "text": "बहुत अच्छे। अब कृपया मुझे अपने ट्रेड (trade) के बारे में बताएँ। आपने कौन सा ट्रेड कोर्स किया है?"
+  },
+  {
+   "t": 95.3,
+   "kind": "student_sent",
+   "text": "मैंने फिटर ट्रेड किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 95.3,
+   "kind": "student",
+   "text": "मैंने फिटर ट्रेड किया है।"
+  },
+  {
+   "t": 95.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 100.1,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 100.1,
+   "kind": "agent",
+   "text": "बहुत बढ़िया! आपने किस इंस्टिट्यूट से कोर्स पूरा किया है?"
+  },
+  {
+   "t": 106.0,
+   "kind": "agent",
+   "text": "माफ़ कीजियेगा, मैंने इंस्टिट्यूट का नाम नहीं पूछा। आप किस इंस्टिट्यूट से कोर्स पूरा किया है?"
+  },
+  {
+   "t": 113.0,
+   "kind": "student_sent",
+   "text": "मैंने आईटीआई प्रयागराज से किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 113.0,
+   "kind": "student",
+   "text": "मैंने आईटीआई प्रयागराज से किया है।"
+  },
+  {
+   "t": 113.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved. Read the spelling back letter by letter and call confirm_spelling once the student agrees."
+  },
+  {
+   "t": 117.1,
+   "kind": "agent",
+   "text": "ठीक है। आपने किस साल में कोर्स पूरा किया?"
+  },
+  {
+   "t": 124.3,
+   "kind": "student_sent",
+   "text": "2021 में पास किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 124.3,
+   "kind": "student",
+   "text": "2021 में पास किया।"
+  },
+  {
+   "t": 124.9,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 134.2,
+   "kind": "agent",
+   "text": "बहुत अच्छे। फिटर ट्रेड में आप क्या काम कर सकते हैं, जैसे पाइप फिटिंग, नट-बोल्ट असेंबली या मशीन मेंटेनेंस? इनमें से आपने क्या किया है?"
+  },
+  {
+   "t": 141.2,
+   "kind": "student_sent",
+   "text": "मैंने फिटिंग और असेंबली का काम किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 141.2,
+   "kind": "student",
+   "text": "मैंने फिटिंग और असेंबली का काम किया है।"
+  },
+  {
+   "t": 142.1,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 142.1,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 150.3,
+   "kind": "agent",
+   "text": "बहुत बढ़िया। आप कौन-कौन से टूल्स (tools) या मशीनरी का इस्तेमाल कर सकते हैं, जैसे फाइल, ड्रिल मशीन या मेज़रिंग टूल्स?"
+  },
+  {
+   "t": 157.8,
+   "kind": "student_sent",
+   "text": "मैं फाइल और ड्रिल चला लेता हूँ।",
+   "source": "improvised"
+  },
+  {
+   "t": 157.8,
+   "kind": "student",
+   "text": "मैं फाइल और ड्रिल चला लेता हूँ।"
+  },
+  {
+   "t": 158.6,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 158.6,
+   "kind": "tool",
+   "name": "suggest_line",
+   "ok": true,
+   "message": "Suggested. It is highlighted for the student to keep or remove."
+  },
+  {
+   "t": 164.2,
+   "kind": "agent",
+   "text": "कम से कम एक कार्य अनुभव या अप्रेंटिसशिप के बारे में बताएँ। आपने कहाँ काम किया है?"
+  },
+  {
+   "t": 173.1,
+   "kind": "student_sent",
+   "text": "मैंने भारत इंजीनियरिंग वर्क्स में काम किया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 173.1,
+   "kind": "student",
+   "text": "मैंने भारत इंजीनियरिंग वर्क्स में काम किया है।"
+  },
+  {
+   "t": 176.7,
+   "kind": "agent",
+   "text": "आपने इस कंपनी में किस पद पर काम किया?"
+  },
+  {
+   "t": 186.4,
+   "kind": "student_sent",
+   "text": "मैंने वहाँ फिटर के पद पर काम किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 186.4,
+   "kind": "student",
+   "text": "मैंने वहाँ फिटर के पद पर काम किया।"
+  },
+  {
+   "t": 187.2,
+   "kind": "tool",
+   "name": "add_experience",
+   "ok": true,
+   "message": "Saved. Confirm the employer's spelling with confirm_spelling, target = this experience_id."
+  },
+  {
+   "t": 190.3,
+   "kind": "agent",
+   "text": "आपने वहाँ कितने समय तक काम किया?"
+  },
+  {
+   "t": 197.9,
+   "kind": "student_sent",
+   "text": "मैंने वहाँ साढ़े तीन साल काम किया।",
+   "source": "improvised"
+  },
+  {
+   "t": 197.9,
+   "kind": "student",
+   "text": "मैंने वहाँ साढ़े तीन साल काम किया।"
+  },
+  {
+   "t": 199.0,
+   "kind": "tool",
+   "name": "add_experience",
+   "ok": false,
+   "message": "The number 5 is not in the student's words. Ask the student to say it, then save it."
+  },
+  {
+   "t": 202.6,
+   "kind": "agent",
+   "text": "आपने वहाँ कितने साल या महीने तक काम किया?"
+  },
+  {
+   "t": 209.7,
+   "kind": "student_sent",
+   "text": "साढ़े तीन साल।",
+   "source": "improvised"
+  },
+  {
+   "t": 209.7,
+   "kind": "student",
+   "text": "साढ़े तीन साल।"
+  },
+  {
+   "t": 214.5,
+   "kind": "agent",
+   "text": "आप वहाँ पर कब से कब तक कार्यरत थे? कृपया वर्ष बताइए।"
+  },
+  {
+   "t": 223.6,
+   "kind": "student_sent",
+   "text": "मैंने 2022 में शुरू किया था।",
+   "source": "improvised"
+  },
+  {
+   "t": 223.6,
+   "kind": "student",
+   "text": "मैंने 2022 में शुरू किया था।"
+  },
+  {
+   "t": 228.6,
+   "kind": "agent",
+   "text": "क्या आप अभी भी वहीं काम कर रहे हैं या आपने काम छोड़ दिया है?"
+  },
+  {
+   "t": 247.2,
+   "kind": "student_sent",
+   "text": "कलेके कहूँ तू नहीं, अधूरा नहीं है, काम छोड़ दिया है।",
+   "source": "improvised"
+  },
+  {
+   "t": 247.2,
+   "kind": "student",
+   "text": "कलेके कहूँ तू नहीं, अधूरा नहीं है, काम छोड़ दिया है।"
+  },
+  {
+   "t": 248.3,
+   "kind": "tool",
+   "name": "add_experience",
+   "ok": false,
+   "message": "The number 5 is not in the student's words. Ask the student to say it, then save it. This was rejected again. Do not ask the student to repeat themselves. Skip this item for now and continue with the next question; it can be added later."
+  },
+  {
+   "t": 254.9,
+   "kind": "agent",
+   "text": "ठीक है, कोई बात नहीं। क्या आपने वहाँ कोई खास प्रोजेक्ट पूरा किया है जिसके बारे में आप बताना चाहें?"
+  },
+  {
+   "t": 264.1,
+   "kind": "student_sent",
+   "text": "नहीं, ऐसा कोई खास प्रोजेक्ट नहीं था।",
+   "source": "improvised"
+  },
+  {
+   "t": 264.1,
+   "kind": "student",
+   "text": "नहीं, ऐसा कोई खास प्रोजेक्ट नहीं था।"
+  },
+  {
+   "t": 270.4,
+   "kind": "agent",
+   "text": "क्या आपके पास कोई अप्रेंटिसशिप या आईटीआई का सर्टिफिकेट है, जैसे NCVT या SCVT?"
+  },
+  {
+   "t": 277.8,
+   "kind": "student_sent",
+   "text": "हाँ, NCVT सर्टिफिकेट है।",
+   "source": "improvised"
+  },
+  {
+   "t": 277.8,
+   "kind": "student",
+   "text": "हाँ, NCVT सर्टिफिकेट है।"
+  },
+  {
+   "t": 278.4,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 282.8,
+   "kind": "agent",
+   "text": "आप कौन-कौन सी भाषाएं बोलते हैं और उन्हें कितना अच्छा बोल लेते हैं?"
+  },
+  {
+   "t": 290.0,
+   "kind": "student_sent",
+   "text": "मुझे हिंदी आती है, यह मेरी मातृभाषा है।",
+   "source": "improvised"
+  },
+  {
+   "t": 290.0,
+   "kind": "student",
+   "text": "मुझे हिंदी आती है, यह मेरी मातृभाषा है।"
+  },
+  {
+   "t": 290.6,
+   "kind": "tool",
+   "name": "save_field",
+   "ok": true,
+   "message": "Saved."
+  },
+  {
+   "t": 293.5,
+   "kind": "agent",
+   "text": "क्या आप सीवी में कुछ और जोड़ना चाहते हैं?"
+  },
+  {
+   "t": 313.5,
+   "kind": "student_sent",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।",
+   "source": "improvised"
+  },
+  {
+   "t": 313.5,
+   "kind": "student",
+   "text": "नहीं, और कुछ नहीं जोड़ना है।"
+  },
+  {
+   "t": 314.1,
+   "kind": "tool",
+   "name": "draft_cv",
+   "ok": true,
+   "message": "Drafting started. Tell the student you are writing their CV and it takes about 20 seconds. Do NOT say the draft is ready until the app's notice arrives; if the student speaks meanwhile, say it is still being written."
+  },
+  {
+   "t": 318.7,
+   "kind": "agent",
+   "text": "मैं आपका सीवी तैयार कर रहा हूँ। इसमें लगभग 20 सेकंड लगेंगे।"
+  },
+  {
+   "t": 325.6,
+   "kind": "student_sent",
+   "text": "जी, ठीक है।",
+   "source": "improvised"
+  },
+  {
+   "t": 325.6,
+   "kind": "student",
+   "text": "जी, ठीक है।"
+  },
+  {
+   "t": 329.7,
+   "kind": "agent",
+   "text": "यह अभी तैयार हो रहा है, कृपया थोड़ा इंतज़ार करें।"
+  },
+  {
+   "t": 340.6,
+   "kind": "agent",
+   "text": "आपका ड्राफ्ट सीवी तैयार है। कृपया हाईलाइट की गई लाइनों और अपने नाम की स्पेलिंग को चेक करें। आप कीप या रिमूव पर टैप कर सकते हैं, या मुझे बदलाव के लिए बता सकते हैं।"
+  },
+  {
+   "t": 344.7,
+   "kind": "tap",
+   "text": "names confirmed, suggestions removed, Looks good -> 409 {\"detail\":\"Finish these first: Missing: At least one skill\"}"
+  }
+ ]
+}

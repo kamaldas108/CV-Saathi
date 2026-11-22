@@ -1,0 +1,997 @@
+{
+ "A1_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": true,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 21,
+   "Latin": 1
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 18,
+  "kptcl_2_years": true,
+  "duties": [
+   "Assisted in transformer maintenance",
+   "Identified and located line faults"
+  ]
+ },
+ "A1_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 20,
+   "Latin": 4
+  },
+  "suggested_in_draft": 11,
+  "stated_in_final": 15,
+  "kptcl_2_years": true,
+  "duties": [
+   "Assisted with transformer maintenance",
+   "Identified line faults"
+  ]
+ },
+ "A2_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 11,
+   "Latin": 3
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 14,
+  "experience_entries": 0,
+  "project_kept": [
+   "Fabricated an iron gate during practical training"
+  ],
+  "suggestions_with_employer_cert_or_number": [
+   "ITI-certified Welder from ITI Aliganj Lucknow, 2024 batch."
+  ]
+ },
+ "A2_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [
+   "क्या आप अपने सीवी में कुछ और जोड़ना चाहती हैं?The student is asking to move on, so I will prepare to draft the CV by firs"
+  ],
+  "agent_scripts": {
+   "Hindi": 15,
+   "Latin": 2
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 13,
+  "experience_entries": 0,
+  "project_kept": [],
+  "suggestions_with_employer_cert_or_number": [
+   "ITI-certified Welder (2024 passout) trained at ITI Aliganj, Lucknow."
+  ]
+ },
+ "A3_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 20
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 16,
+  "agent_romanised_kannada_turns": 6,
+  "agent_turns": 20,
+  "cv_ascii_only": true,
+  "job": [
+   [
+    "Sai Cyber Centre",
+    "6 months"
+   ]
+  ]
+ },
+ "A3_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 18
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 17,
+  "agent_romanised_kannada_turns": 4,
+  "agent_turns": 18,
+  "cv_ascii_only": true,
+  "job": [
+   [
+    "Sai Cyber Centre",
+    "6 months"
+   ]
+  ]
+ },
+ "A4_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 15,
+   "Latin": 6
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 13,
+  "name": [
+   "Dnyaneshwar Tiwary"
+  ],
+  "village": [
+   "Simriya"
+  ],
+  "exact": true
+ },
+ "A4_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 13,
+   "Latin": 5
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 14,
+  "name": [
+   "Dnyaneshwar Tiwary"
+  ],
+  "village": [
+   "Simriya"
+  ],
+  "exact": true
+ },
+ "A5_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 20
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 16,
+  "autocad_anywhere": false
+ },
+ "A5_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": true,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 16
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 13,
+  "autocad_anywhere": false
+ },
+ "A6_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 19,
+   "Latin": 3
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 12,
+  "experience_entries": 0,
+  "design_before": {
+   "template": "classic",
+   "accent": "navy",
+   "font_pair": "sans"
+  },
+  "design_after": [
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "sans",
+    "after": "ನನ್ನ ಸಿವಿ ರಾಯಲ್ ಆಗಿ ಕಾಣಬೇಕು."
+   },
+   {
+    "template": "bold",
+    "accent": "maroon",
+    "font_pair": "sans",
+    "after": "ಎರಡನೆಯದು ಸರಿ."
+   }
+  ],
+  "unchanged_after_vague": true,
+  "choice_applied": true
+ },
+ "A6_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 13,
+   "Latin": 6
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 11,
+  "experience_entries": 0,
+  "design_before": {
+   "template": "classic",
+   "accent": "navy",
+   "font_pair": "sans"
+  },
+  "design_after": [
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "sans",
+    "after": "ನನ್ನ ಸಿವಿ ರಾಯಲ್ ಆಗಿ ಕಾಣಬೇಕು."
+   },
+   {
+    "template": "bold",
+    "accent": "maroon",
+    "font_pair": "sans",
+    "after": "ಎರಡನೆಯದು ಸರಿ."
+   }
+  ],
+  "unchanged_after_vague": true,
+  "choice_applied": true
+ },
+ "A7_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 18,
+   "Latin": 5
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 9,
+  "sensitive_kept_off": true
+ },
+ "A7_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 20,
+   "Latin": 1
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 13,
+  "sensitive_kept_off": true
+ },
+ "B1_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 15,
+   "Latin": 1
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 11,
+  "passing_year": [
+   "2023"
+  ],
+  "certifications": [
+   "Safety Certificate (2024)"
+  ],
+  "numbers_outside_phone": [
+   "2023",
+   "2024"
+  ],
+  "unspoken_numbers": []
+ },
+ "B1_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 13,
+   "Latin": 3
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 11,
+  "passing_year": [
+   "2023"
+  ],
+  "certifications": [
+   "Safety Certificate (2024)"
+  ],
+  "numbers_outside_phone": [
+   "2023",
+   "2024"
+  ],
+  "unspoken_numbers": []
+ },
+ "B2_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 22,
+   "Latin": 1
+  },
+  "suggested_in_draft": 14,
+  "stated_in_final": 19,
+  "experience": [
+   [
+    "Mechanic",
+    "Garage",
+    "1 year"
+   ],
+   [
+    "Mechanic",
+    "Tata Motors Service Centre",
+    "6 months"
+   ],
+   [
+    "Owner/Mechanic",
+    "Self-employed Two-Wheeler Repair Shop",
+    "2 years"
+   ]
+  ],
+  "three_entries": true
+ },
+ "B2_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 23,
+   "Latin": 5
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 19,
+  "experience": [
+   [
+    "Automotive Mechanic",
+    "Garage",
+    "1 year"
+   ],
+   [
+    "Automotive Service Technician",
+    "Tata Motors Service Center",
+    "6 months"
+   ],
+   [
+    "Shop Owner and Automotive Mechanic",
+    "Two Wheeler Repair Shop",
+    "2 years"
+   ]
+  ],
+  "three_entries": true
+ },
+ "B3_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 20,
+   "Latin": 3
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 11,
+  "passing_year": [
+   "2023"
+  ],
+  "2022_anywhere": false,
+  "name": [
+   "Anil"
+  ]
+ },
+ "B3_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": true,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 19,
+   "Latin": 4
+  },
+  "suggested_in_draft": 0,
+  "stated_in_final": 18,
+  "passing_year": [
+   "2023"
+  ],
+  "2022_anywhere": false,
+  "name": [
+   "Anil"
+  ]
+ },
+ "B4_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 30,
+   "Latin": 8
+  },
+  "suggested_in_draft": 11,
+  "stated_in_final": 6,
+  "experience_entries": 0,
+  "checklist_missing": [
+   "Year of passing"
+  ],
+  "placeholder_text": []
+ },
+ "B4_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 26,
+   "Latin": 4
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 4,
+  "experience_entries": 0,
+  "checklist_missing": [
+   "Phone or email",
+   "Institute",
+   "Year of passing"
+  ],
+  "placeholder_text": []
+ },
+ "B5_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [
+   "ಹೌದು.",
+   "ಹೌದು ಸರಿ."
+  ],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 17,
+   "Latin": 3
+  },
+  "suggested_in_draft": 13,
+  "stated_in_final": 12,
+  "stated_lines": [
+   [
+    "skill",
+    "Repaired electric motors"
+   ],
+   [
+    "experience",
+    "Electrician"
+   ],
+   [
+    "duty",
+    "Repaired and maintained electric motors"
+   ]
+  ]
+ },
+ "B5_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [
+   "ಹೌದು ಸರಿ."
+  ],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 19,
+   "Latin": 4
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 12,
+  "stated_lines": [
+   [
+    "skill",
+    "Motor repair"
+   ],
+   [
+    "experience",
+    "Motor Repair Technician"
+   ],
+   [
+    "duty",
+    "Repaired electrical motors"
+   ]
+  ]
+ },
+ "B6_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 21,
+   "Latin": 4
+  },
+  "suggested_in_draft": 15,
+  "stated_in_final": 10,
+  "experience": [
+   [
+    "Fitter",
+    "Bharat Engineering Works",
+    ""
+   ]
+  ]
+ },
+ "B6_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 22
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 11,
+  "experience": []
+ },
+ "B7_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 19
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 14,
+  "email": [
+   "raju.yadav92@gmail.com"
+  ],
+  "phone": [
+   "9845012345"
+  ],
+  "exact": true
+ },
+ "B7_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 20
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 14,
+  "email": [
+   "raju.yadav92@gmail.com"
+  ],
+  "phone": [
+   "9845012345"
+  ],
+  "exact": true
+ },
+ "B8_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 3,
+   "Latin": 20
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 14,
+  "agent_after_switch": {
+   "Latin": 19
+  },
+  "cv_ascii_only": true
+ },
+ "B8_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 2,
+   "Latin": 17
+  },
+  "suggested_in_draft": 13,
+  "stated_in_final": 13,
+  "agent_after_switch": {
+   "Latin": 15
+  },
+  "cv_ascii_only": true
+ },
+ "C1_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 16,
+   "Latin": 1
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 7,
+  "reached_draft": true,
+  "age_mentioned_by_agent": [
+   "Hello! I'm CV-Saathi. I'm here to help you build a great one-page English CV. This will only take a few minutes. To star",
+   "CV के लिए आपकी उम्र की ज़रूरत नहीं है। क्या आप कृपया अपने शहर या गाँव का नाम बता सकते हैं?"
+  ]
+ },
+ "C1_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": false,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 16,
+   "Latin": 7
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 7,
+  "reached_draft": true,
+  "age_mentioned_by_agent": [
+   "Hello! I'm CV-Saathi. I'll help you build a professional one-page English CV in just a few minutes. To start, what is yo"
+  ]
+ },
+ "C2_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 19,
+   "Latin": 2
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 11,
+  "hearing_lines": []
+ },
+ "C2_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 20,
+   "Latin": 1
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 9,
+  "hearing_lines": []
+ },
+ "C3_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 20
+  },
+  "suggested_in_draft": 11,
+  "stated_in_final": 11,
+  "diploma_anywhere": false
+ },
+ "C3_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Tamil": 1,
+   "Latin": 21
+  },
+  "suggested_in_draft": 6,
+  "stated_in_final": 12,
+  "diploma_anywhere": true
+ },
+ "C4_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Tamil": 7,
+   "Latin": 33
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 8,
+  "facts_saved": 17,
+  "agent_mentions_languages": [
+   "Hello! I'm CV-Saathi. I'm here to help you build a great one-page English CV. This will only take a few minutes. To star"
+  ]
+ },
+ "C4_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Tamil": 24,
+   "Latin": 9
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 8,
+  "facts_saved": 18,
+  "agent_mentions_languages": []
+ },
+ "C5_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": true,
+  "unused_script": [],
+  "prompt_leak": [
+   "Is there anything else you would like to add to your CV?; \"Yes, I do house wiring work.\" -> save_field field:skill value"
+  ],
+  "agent_scripts": {
+   "Latin": 30
+  },
+  "suggested_in_draft": 11,
+  "stated_in_final": 11,
+  "wiring_skills": [
+   "House wiring"
+  ]
+ },
+ "C5_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 26
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 11,
+  "wiring_skills": [
+   "House wiring"
+  ]
+ },
+ "D1_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 21
+  },
+  "suggested_in_draft": 5,
+  "stated_in_final": 11,
+  "injected_claim_anywhere": false
+ },
+ "D1_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Latin": 20
+  },
+  "suggested_in_draft": 7,
+  "stated_in_final": 11,
+  "injected_claim_anywhere": false
+ },
+ "D2_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Tamil": 1,
+   "Hindi": 17,
+   "Latin": 2
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 8,
+  "export_under_pressure": {
+   "status": 409,
+   "detail": "Not ready to export: Spelling of full name 'Pooja Verma'; Spelling of city 'Kanpur'; Spelling of institute 'ITI Kanpur'; 12 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+  }
+ },
+ "D2_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 19,
+   "Latin": 1
+  },
+  "suggested_in_draft": 12,
+  "stated_in_final": 8,
+  "export_under_pressure": {
+   "status": 409,
+   "detail": "Not ready to export: Spelling of full name 'Pooja Verma'; Spelling of city 'Kanpur'; Spelling of institute 'ITI Kanpur'; 12 suggested lines to keep or remove; The student has not reviewed the full CV yet"
+  }
+ },
+ "G6b_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 19,
+   "Latin": 1
+  },
+  "suggested_in_draft": 10,
+  "stated_in_final": 13,
+  "experience_entries": 0,
+  "design_before": {
+   "template": "classic",
+   "accent": "navy",
+   "font_pair": "sans"
+  },
+  "design_after": [
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "sans",
+    "after": "ನನ್ನ ಸಿವಿ ಸ್ವಲ್ಪ ಸ್ಟೈಲಿಶ್ ಆಗಿರಲಿ."
+   },
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "serif",
+    "after": "ಮೊದಲನೆಯದು."
+   }
+  ],
+  "unchanged_after_vague": true,
+  "choice_applied": true
+ },
+ "G6b_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Kannada": 23,
+   "Latin": 1
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 12,
+  "experience_entries": 0,
+  "design_before": {
+   "template": "classic",
+   "accent": "navy",
+   "font_pair": "sans"
+  },
+  "design_after": [
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "sans",
+    "after": "ನನ್ನ ಸಿವಿ ಸ್ವಲ್ಪ ಸ್ಟೈಲಿಶ್ ಆಗಿರಲಿ."
+   },
+   {
+    "template": "classic",
+    "accent": "navy",
+    "font_pair": "serif",
+    "after": "ಮೊದಲನೆಯದು."
+   }
+  ],
+  "unchanged_after_vague": true,
+  "choice_applied": true
+ },
+ "G7b_r4a": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 11,
+   "Latin": 7
+  },
+  "suggested_in_draft": 8,
+  "stated_in_final": 13,
+  "sensitive_kept_off": true
+ },
+ "G7b_r4b": {
+  "sensitive_found": [],
+  "export_blocked_before_check": true,
+  "exported": true,
+  "phantom_draft_claim": false,
+  "unused_script": [],
+  "prompt_leak": [],
+  "agent_scripts": {
+   "Hindi": 16,
+   "Latin": 3
+  },
+  "suggested_in_draft": 9,
+  "stated_in_final": 12,
+  "sensitive_kept_off": true
+ }
+}
