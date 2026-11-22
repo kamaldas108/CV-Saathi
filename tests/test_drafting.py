@@ -41,3 +41,32 @@ def test_prompt_has_the_rules_the_saved_lines_and_the_transcript():
     assert "Never add an employer, certificate, grade, date or number" in prompt
     assert "KPTCL" in prompt and nb.values("experience")[0].id in prompt
     assert "Student: My name is Ravi Kumar" in prompt
+
+
+def test_quota_errors_are_retried(monkeypatch):
+    # Evaluation: three students drafting at once got "429 RESOURCE_EXHAUSTED" on the free trial.
+    import google.genai
+
+    from cvsaathi import drafting
+
+    calls = {"n": 0}
+
+    class QuotaError(Exception):
+        code = 429
+
+    class FakeModels:
+        def generate_content(self, **kwargs):
+            calls["n"] += 1
+            if calls["n"] < 3:
+                raise QuotaError("Resource exhausted")
+            return type("R", (), {"text": '{"lines": []}'})()
+
+    class FakeClient:
+        def __init__(self, **kwargs):
+            self.models = FakeModels()
+
+    monkeypatch.setenv("GOOGLE_CLOUD_PROJECT", "test")
+    monkeypatch.setattr(google.genai, "Client", FakeClient)
+    monkeypatch.setattr(drafting.time, "sleep", lambda s: None)
+    assert drafting.call_model("prompt").lines == []
+    assert calls["n"] == 3

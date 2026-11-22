@@ -72,7 +72,14 @@ ALL_WORDS = {
     "सब", "सभी", "दोनों", "ಎಲ್ಲಾ", "ಎಲ್ಲ", "ಎರಡೂ",
 }
 
-NEGATIONS = {"not", "no", "never", "nahi", "nahin", "illa", "except", "nope", "dont", "didnt", "नहीं", "ಇಲ್ಲ"}
+NEGATIONS = {"not", "no", "never", "nahi", "nahin", "illa", "except", "nope", "dont", "didnt", "नहीं", "नही", "ना",
+             "मत", "ಇಲ್ಲ", "ಬೇಡ"}
+NONE_WORDS = {"fresher", "none", "nothing", "फ्रेशर", "ಫ್ರೆಶರ್"}
+
+
+def is_negation(word: str) -> bool:
+    """'no' as a word, or fused onto a Kannada verb: "ಮಾಡಿಲ್ಲ" (haven't done), "maadilla"."""
+    return word in NEGATIONS or word.endswith("ಇಲ್ಲ") or word.endswith("ಲ್ಲ") or word.endswith("illa")
 
 SENSITIVE_PATTERNS = [
     r"\bcaste\b", r"\breligion\b", r"\bhindu\b", r"\bmuslim\b", r"\bchristian\b", r"\bsikh\b",
@@ -90,6 +97,14 @@ STOPWORDS = {
 _DIGIT_WORDS = {
     "zero": "0", "oh": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5",
     "six": "6", "seven": "7", "eight": "8", "nine": "9", "ten": "10", "eleven": "11", "twelve": "12",
+    # Kannada, in script and romanized ("ಎರಡು ವರ್ಷ" = two years)
+    "ಒಂದು": "1", "ಎರಡು": "2", "ಮೂರು": "3", "ನಾಲ್ಕು": "4", "ಐದು": "5", "ಆರು": "6", "ಏಳು": "7", "ಎಂಟು": "8",
+    "ಒಂಬತ್ತು": "9", "ಹತ್ತು": "10", "ondu": "1", "eradu": "2", "mooru": "3", "naalku": "4", "aidu": "5",
+    "hattu": "10",
+    # Hindi, in script and romanized ("दो साल" = two years). "do" is left out: it is also English.
+    "एक": "1", "दो": "2", "तीन": "3", "चार": "4", "पांच": "5", "पाँच": "5", "छह": "6", "छः": "6", "सात": "7",
+    "आठ": "8", "नौ": "9", "दस": "10", "teen": "3", "paanch": "5", "panch": "5", "saat": "7", "aath": "8",
+    "das": "10",
 }
 # Kannada and Devanagari digits map to ASCII so a transcript in either script still
 # counts as evidence for "2023".
@@ -99,8 +114,12 @@ _SCRIPT_DIGITS = str.maketrans("೦೧೨೩೪೫೬೭೮೯०१२३४५
 def normalize(text: str) -> str:
     """Casefold, unify digits and number words, and drop punctuation."""
     text = unicodedata.normalize("NFKC", text or "").translate(_SCRIPT_DIGITS).casefold()
-    # Keep "@", "." and "+" only inside tokens such as emails, so "Ravi." matches "Ravi".
-    text = re.sub(r"[^\w@.+]+", " ", text)
+    # The voice model sometimes copies a Kannada word with look-alike Telugu letters
+    # ("నమಸ್ಕಾರ"); map the Telugu block onto Kannada so the quote still matches.
+    text = "".join(chr(ord(c) + 0x80) if "ఀ" <= c <= "౿" else c for c in text)
+    # Keep letters, digits and combining marks. Indic vowel signs and viramas are
+    # marks, not \w: dropping them once turned "हाँ" into "ह" and "ಕನ್ನಡ" into "ಕನ ನಡ".
+    text = "".join(c if (c.isalnum() or c in "@.+_" or unicodedata.category(c).startswith("M")) else " " for c in text)
     text = re.sub(r"(?<!\w)[@.+]+|[@.+]+(?!\w)", " ", text)
     words = [_DIGIT_WORDS.get(word, word) for word in text.split()]
     # "double five" -> "5 5"
@@ -124,7 +143,9 @@ _MARKERS = re.compile(
     r"<[^<>]{0,300}>"                     # any tag, with or without attributes
     r"|\{\s*[a-z_ ]{1,24}\s*\}"            # {pause}
     r"|\[\s*(?:noise|pause|silence|inaudible|music|laughter)\s*\]"
-    r"|#{2,}[^<\n]*",                     # markdown headings
+    r"|#{2,}[^<\n]*"                      # markdown headings
+    r"|```[a-z]*\s*[\s\S]*?```"              # code fences ("```json {} ```")
+    r"|[぀-ヿ㐀-鿿가-힯]+",  # CJK/Korean leaking into speech (seen live: "比如")
     re.IGNORECASE,
 )
 
@@ -152,6 +173,24 @@ def name_in(name: str, text: str) -> bool:
         return common >= 4 and common >= min(len(w), len(e)) - 2
 
     return bool(words) and all(any(same(w, e) for e in said) for w in words)
+
+
+def spelled_name(text: str) -> str | None:
+    """The name a student spelled out letter by letter, in their own letters:
+    "... स्पेलिंग D-N-Y-A-N-E-S-H-W-A-R, T-I-W-A-R-Y" -> "Dnyaneshwar Tiwary"."""
+    groups = re.findall(r"(?<![A-Za-z])[A-Za-z](?:\s*[-.]\s*[A-Za-z]){2,}(?![A-Za-z])", text or "")
+    if not groups:
+        return None
+    return unspell(" ".join(re.sub(r"\s+", "", g) for g in groups))
+
+
+def quote_in(quote: str, text: str) -> bool:
+    """A normalised quote is in a normalised answer: exactly, or with every word present
+    (the model sometimes drops a word: "ನಮಸ್ಕಾರ, ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ")."""
+    if quote in text:
+        return True
+    words, said = quote.split(), set(text.split())
+    return len(words) >= 2 and all(w in said for w in words)
 
 
 def number_said(number: str, text: str) -> bool:
@@ -266,14 +305,30 @@ class CvNotebook:
         if not quotes:
             return False
         said = [normalize(t["text"]) for t in self.transcript if t["speaker"] == "student"]
-        return all(any(q in text for text in said) for q in quotes)
+        return all(any(quote_in(q, text) for text in said) for q in quotes)
+
+    def resolve_evidence(self, evidence: str) -> str:
+        """The evidence to check: the model's quote if the student said it, otherwise, when
+        the student's latest answer was in Kannada or Hindi, that answer.
+
+        Seen live: the voice model can't copy Kannada script reliably and sometimes quotes
+        a Kannada answer in English ("Kannada native language"). For Indic answers the
+        content-word check is skipped anyway; numbers are still checked against the
+        student's own words.
+        """
+        if self.student_said(evidence):
+            return evidence
+        latest = next((t["text"] for t in reversed(self.transcript) if t["speaker"] == "student"), "")
+        if latest and not _mostly_ascii(latest):
+            return latest
+        return evidence
 
     def _student_turn_index(self, evidence: str) -> int | None:
         """Index of the latest student turn that contains the evidence's last quote."""
         quote = normalize(str(evidence or "").split("|")[-1])
         for i in range(len(self.transcript) - 1, -1, -1):
             turn = self.transcript[i]
-            if turn["speaker"] == "student" and quote and quote in normalize(turn["text"]):
+            if turn["speaker"] == "student" and quote and quote_in(quote, normalize(turn["text"])):
                 return i
         return None
 
@@ -368,7 +423,7 @@ class CvNotebook:
         words = set(normalize(evidence).split())
         index = self._student_turn_index(evidence)
         turn_words = set(normalize(self.transcript[index]["text"]).split()) if index is not None else words
-        agreed = bool(words & AFFIRMATIONS) or (bool(words & ALL_WORDS) and not turn_words & NEGATIONS)
+        agreed = bool(words & AFFIRMATIONS) or (bool(words & ALL_WORDS) and not any(is_negation(w) for w in turn_words))
         return self._agent_turn_before(evidence) if agreed else ""
 
     def _ruled_out(self, evidence: str) -> set[str]:
@@ -378,7 +433,7 @@ class CvNotebook:
             return set()
         words = normalize(self.transcript[index]["text"]).split()
         for i, word in enumerate(words):
-            if word in NEGATIONS:
+            if is_negation(word):
                 return _content_stems(" ".join(words[i + 1:]))
         return set()
 
@@ -400,6 +455,7 @@ class CvNotebook:
     # ----- writes from the interview ----------------------------------------------------
 
     def save_field(self, name: str, value: str, evidence: str) -> dict[str, Any]:
+        evidence = self.resolve_evidence(evidence)
         value = " ".join(str(value or "").split())
         if name not in SINGLE_FIELDS and name not in LIST_FIELDS:
             return _no(f"'{name}' is not a CV field. Allowed: {', '.join([*SINGLE_FIELDS, *LIST_FIELDS])}. Use add_experience for jobs and apprenticeships.")
@@ -409,6 +465,11 @@ class CvNotebook:
         if name in SINGLE_FIELDS:
             spec = SINGLE_FIELDS[name]
             status = "needs_spelling" if spec.get("spelling") else "draft"
+            theirs = spelled_name(evidence) if spec.get("spelling") else None
+            if theirs and letters_of(theirs)[:1] == letters_of(value)[:1]:
+                # The student spelled it out letter by letter: use exactly their letters,
+                # and that is their confirmation.
+                value, status = theirs, "confirmed"
             existing = self.single(name)
             if existing:
                 old = existing.value
@@ -436,6 +497,7 @@ class CvNotebook:
         return _ok(message, fact_id=fact.id, checklist=self.checklist())
 
     def add_experience(self, role: str, employer: str, duration: str, evidence: str) -> dict[str, Any]:
+        evidence = self.resolve_evidence(evidence)
         role, employer, duration = (" ".join(str(x or "").split()) for x in (role, employer, duration))
         if len(self.values("experience")) >= MAX_EXPERIENCE:
             return _no(f"The CV already lists {MAX_EXPERIENCE} jobs or apprenticeships.")
@@ -447,9 +509,11 @@ class CvNotebook:
         problem = self._check_evidence("duration", duration, evidence)
         support = f"{evidence} {self.offer_accepted(evidence)}"
         if not problem and _mostly_ascii(support) and _content_stems(role):
-            # The role often comes from the trade they gave earlier ("Electrician").
+            # The role often comes from the trade or from other answers (seen live: a COPA student
+            # who "uses computer, printer, scanner" was refused the role "Computer Operator").
             trade = self.single("trade")
-            known = _content_stems(support) | (_content_stems(trade.value) if trade else set())
+            said = " ".join(t["text"] for t in self.transcript if t["speaker"] == "student")
+            known = _content_stems(support) | _content_stems(said) | (_content_stems(trade.value) if trade else set())
             if not _content_stems(role) & known:
                 problem = "The role adds words the student never said. Use their words or their trade."
         if not problem and _mostly_ascii(support) and not name_in(employer, support):
@@ -468,10 +532,11 @@ class CvNotebook:
 
     def mark_no_experience(self, evidence: str) -> dict[str, Any]:
         """Record that the student said they have no job or apprenticeship (so drafting can go ahead)."""
+        evidence = self.resolve_evidence(evidence)
         if not self.student_said(evidence):
             return _no("The evidence is not in anything the student said.")
         words = set(normalize(evidence).split())
-        if not words & (NEGATIONS | {"fresher", "none", "nothing"}):
+        if not any(is_negation(w) or w in NONE_WORDS for w in words):
             return _no("The evidence must be the student saying they have no job or apprenticeship.")
         if self.values("experience"):
             return _no("A job or apprenticeship is already saved.")
@@ -479,6 +544,7 @@ class CvNotebook:
         return _ok("Noted: no job or apprenticeship yet. Ask about practical training, OJT or projects instead.")
 
     def add_duty(self, experience_id: str, text: str, evidence: str) -> dict[str, Any]:
+        evidence = self.resolve_evidence(evidence)
         text = " ".join(str(text or "").split())
         parent = self.get(experience_id)
         if not parent or parent.field != "experience":
@@ -501,9 +567,15 @@ class CvNotebook:
         fact = self.single(target) if target in SINGLE_FIELDS else self.get(target)
         if not fact or not (SINGLE_FIELDS.get(fact.field, {}).get("spelling") or fact.field == "experience"):
             return _no("Target must be full_name, city, institute, or an experience_id.")
+        evidence = self.resolve_evidence(evidence)
         if not self.student_said(evidence):
             return _no("The evidence is not in anything the student said or typed.")
         current = fact.extra["employer"] if fact.field == "experience" else fact.value
+        # The student's own spelled letters win over the model's version (seen live:
+        # student spelled T-I-W-A-R-Y, the model passed "Tiwari").
+        theirs = spelled_name(evidence)
+        if theirs:
+            spelled = theirs
         if letters_of(spelled) == letters_of(current):
             spelled = current  # same letters: keep the saved form, e.g. "KPTCL" not "Kptcl"
         # Saying the name normally ("My name is Ram Kumar") is not spelling it. Spelled
@@ -549,6 +621,7 @@ class CvNotebook:
         must grow from the student's own words. Facts (employers, certificates, dates,
         numbers) are never suggested.
         """
+        based_on = self.resolve_evidence(based_on)
         value = " ".join(str(value or "").split())
         if name not in self.SUGGESTABLE:
             return _no(f"Only {', '.join(sorted(self.SUGGESTABLE))} can be suggested. Ask the student for anything else.")

@@ -202,3 +202,26 @@ def test_anything_else_must_be_the_last_question():
     assert "LAST question" in draft_not_ready(nb)
     nb.add_turn("agent", "Is there anything else you would like to add to your CV?")
     assert draft_not_ready(nb) is None
+
+
+def test_anything_else_in_other_kannada_wording():
+    # Evaluation: "ನಿಮ್ಮ ಸಿವಿ ಬಗ್ಗೆ ಇನ್ನು ಏನಾದರೂ ಸೇರಿಸಲು ಬಯಸುತ್ತೀರಾ?" was not recognised.
+    from cvsaathi.live_tools import draft_not_ready
+
+    nb = full_notebook()
+    nb.add_turn("agent", "ನಿಮ್ಮ ಸಿವಿ ಬಗ್ಗೆ ಇನ್ನು ಏನಾದರೂ ಸೇರಿಸಲು ಬಯಸುತ್ತೀರಾ?")
+    assert draft_not_ready(nb) is None
+
+
+def test_looks_good_tap_is_relayed_to_the_voice_agent():
+    # Evaluation: the agent didn't know the CV was checked, so it postponed the design request.
+    from fastapi.testclient import TestClient
+
+    from cvsaathi import server
+
+    client = TestClient(server.app)
+    sid = client.post("/api/sessions", json={"consent": True, "adult": True}).json()["session_id"]
+    session = server.sessions[sid]
+    session.notebook = full_notebook()
+    assert client.post(f"/api/sessions/{sid}/approve").status_code == 200
+    assert any("Looks good" in text and speak for text, speak in session.notices)

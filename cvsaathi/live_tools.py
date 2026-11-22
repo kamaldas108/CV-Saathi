@@ -100,8 +100,11 @@ CHANGES ON THE CHECK SCREEN
   suggest the new one. If they want to add something, save it.
 - When they have finished checking and tapped "Looks good", help them pick a style
   (go_to_step "template") and adjust the design with set_design: colour, font, section
-  order, spacing, template. If a request is vague ("make it royal"), offer two or three
-  concrete options. If it is not supported, say so in one short sentence.
+  order, spacing, template. If a request is vague ("make it royal", "make it look good"),
+  do not guess and do not change anything yet: offer these three by name and wait for
+  the student to pick one: (1) navy with a formal serif font, (2) maroon with the Bold
+  template, (3) purple with the Modern template. Then apply only the one they chose.
+  If a request is not supported, say so in one short sentence.
 - The student can say "go back" at any time: use go_to_step.
 
 WRITING STRONG CV LINES
@@ -309,7 +312,9 @@ def draft_not_ready(nb: Any) -> str | None:
     if not nb.values("language"):
         return ("Not yet: first ask about certificates, and languages with their level. Then call draft_cv.")
     # "Anything else?" must be the LAST question: asked after the languages were answered.
-    asked_more = re.compile(r"anything else|anything more|aur kuch|kuch aur|innu enu|और कुछ|कुछ और|ಇನ್ನೇನಾದರೂ|ಬೇರೆ ಏನಾದರೂ", re.I)
+    asked_more = re.compile(
+        r"anything else|anything more|aur kuch|kuch aur|innu enu|bere enadru|और कुछ|कुछ और|"
+        r"ಇನ್ನೇನಾದರೂ|ಬೇರೆ ಏನಾದರೂ|ಇನ್ನು ಏನಾದರೂ|ಇನ್ಯಾವುದಾದರೂ|ಏನಾದರೂ ಸೇರಿಸ|ಸೇರಿಸಲು ಬಯಸ", re.I)
     asked_at = [i for i, turn in enumerate(nb.transcript) if turn["speaker"] == "agent" and asked_more.search(turn["text"])]
     languages_at = [i for f in nb.values("language") if (i := nb._student_turn_index(f.evidence)) is not None]
     if not asked_at or (languages_at and asked_at[-1] < max(languages_at)):

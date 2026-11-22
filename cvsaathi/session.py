@@ -30,6 +30,7 @@ class Session:
     tool_failures: dict[str, int] = field(default_factory=dict)
     drafting: bool = False
     draft_task: Any = None
+    notices: list = field(default_factory=list)  # (text, speak) for the voice agent: taps it can't see
 
     def reset(self) -> None:
         """Start over (F12): clear the notebook and design, and stop background work."""
@@ -40,6 +41,7 @@ class Session:
             self.draft_task.cancel()
             self.draft_task = None
         self.drafting = False
+        self.notices.clear()
         self.notebook = CvNotebook()
         self.design = DesignSettings()
         self.design_revision += 1

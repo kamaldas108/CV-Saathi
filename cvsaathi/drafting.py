@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from typing import Any, Callable
 
 from pydantic import BaseModel, Field
@@ -78,12 +79,18 @@ def call_model(prompt: str) -> Draft:
     # A stuck call once left "Write my CV" blocked; give up after 60 s so the student can retry.
     client = genai.Client(vertexai=True, project=os.environ["GOOGLE_CLOUD_PROJECT"], location=DRAFT_LOCATION,
                           http_options=types.HttpOptions(timeout=60_000))
-    response = client.models.generate_content(
-        model=DRAFT_MODEL_ID,
-        contents=prompt,
-        config=types.GenerateContentConfig(response_mime_type="application/json", response_schema=Draft),
-    )
-    return Draft.model_validate_json(response.text)
+    config = types.GenerateContentConfig(response_mime_type="application/json", response_schema=Draft)
+    # Free-trial projects have low per-minute quotas; several students drafting at once
+    # got "429 RESOURCE_EXHAUSTED" in the evaluation. Wait and retry twice.
+    for wait in (4, 10, None):
+        try:
+            response = client.models.generate_content(model=DRAFT_MODEL_ID, contents=prompt, config=config)
+            return Draft.model_validate_json(response.text)
+        except Exception as exc:
+            if wait is None or getattr(exc, "code", None) != 429:
+                raise
+            time.sleep(wait)
+    raise RuntimeError("unreachable")
 
 
 def draft_cv(nb: CvNotebook, model: Callable[[str], Draft] = call_model) -> dict[str, Any]:

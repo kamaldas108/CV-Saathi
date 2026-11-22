@@ -386,3 +386,87 @@ def test_markup_leaked_by_the_voice_model_is_removed():
               "</Steps></LMDX>I'm writing your CV now.")
     assert strip_markers(leaked) == "Is there anything else you would like to add to your CV? I'm writing your CV now."
     assert strip_markers("Flat no 5 # main road") == "Flat no 5 # main road"
+
+
+# ----- seen in the 7-case live evaluation (Hindi and Kannada) -------------------------------
+
+
+def test_hindi_and_kannada_words_survive_normalising():
+    from cvsaathi.notebook import normalize
+
+    assert normalize("हाँ, सही है।") == "हाँ सही है"          # was "ह सह ह"
+    assert normalize("ಕನ್ನಡ") == "ಕನ್ನಡ"                      # was "ಕನ ನಡ"
+
+
+def test_hindi_yes_confirms_a_read_back():
+    nb = CvNotebook()
+    nb.add_turn("student", "मेरा नाम रमेश यादव है।")
+    nb.save_field("full_name", "Ramesh Yadav", "मेरा नाम रमेश यादव है।")
+    nb.add_turn("agent", "आपका नाम R-A-M-E-S-H Y-A-D-A-V है, सही है?")
+    nb.add_turn("student", "हाँ, सही है।")
+    assert nb.confirm_spelling("full_name", "Ramesh Yadav", "हाँ, सही है।")["ok"]
+
+
+def test_no_experience_in_hindi_and_kannada():
+    for said in ["नहीं, अभी तक कोई जॉब या अप्रेंटिसशिप नहीं की।", "ಯಾವ ಕೆಲಸನೂ ಮಾಡಿಲ್ಲ, ಇನ್ನೂ ಫ್ರೆಶರ್."]:
+        nb = CvNotebook()
+        nb.add_turn("student", said)
+        assert nb.mark_no_experience(said)["ok"], said
+
+
+def test_kannada_quote_with_look_alike_telugu_letters_or_a_dropped_word():
+    nb = CvNotebook()
+    nb.add_turn("student", "ನಮಸ್ಕಾರ, ನನ್ನ ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")
+    assert nb.save_field("full_name", "Manjunatha Gowda", "నమಸ್ಕಾರ, ನನ್ನ ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")["ok"]
+    nb2 = CvNotebook()
+    nb2.add_turn("student", "ನಮಸ್ಕಾರ, ನನ್ನ ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")
+    assert nb2.save_field("full_name", "Manjunatha Gowda", "ನಮಸ್ಕಾರ, ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")["ok"]
+
+
+def test_english_evidence_for_a_kannada_answer_falls_back_to_that_answer():
+    nb = CvNotebook()
+    nb.add_turn("student", "ಕನ್ನಡ ಮಾತೃಭಾಷೆ, ಇಂಗ್ಲಿಷ್ ಬೇಸಿಕ್.")
+    assert nb.save_field("language", "Kannada (Native)", "Kannada native language")["ok"]
+
+
+def test_english_answers_get_no_fallback():
+    nb = CvNotebook()
+    nb.add_turn("student", "I do house wiring.")
+    assert not nb.save_field("skill", "AutoCAD", "I know AutoCAD")["ok"]
+
+
+def test_kannada_and_hindi_number_words():
+    nb = CvNotebook()
+    said = "ಕೆಪಿಟಿಸಿಎಲ್‌ನಲ್ಲಿ ಎರಡು ವರ್ಷ ಅಪ್ರೆಂಟಿಸ್ ಆಗಿದ್ದೆ."
+    nb.add_turn("student", said)
+    assert nb.add_experience("Apprentice Electrician", "KPTCL", "2 years", said)["ok"]
+    assert not CvNotebook().add_experience("Apprentice Electrician", "KPTCL", "3 years", said)["ok"]
+
+
+def test_students_spelled_letters_win_over_the_models_spelling():
+    nb = CvNotebook()
+    said = "मेरा नाम ज्ञानेश्वर तिवारी है। स्पेलिंग D-N-Y-A-N-E-S-H-W-A-R, T-I-W-A-R-Y."
+    nb.add_turn("student", said)
+    assert nb.save_field("full_name", "Dnyaneshwar Tiwari", said)["ok"]
+    name = nb.single("full_name")
+    assert name.value == "Dnyaneshwar Tiwary" and name.status == "confirmed"
+
+
+def test_role_can_come_from_anything_the_student_said():
+    nb = CvNotebook()
+    nb.add_turn("student", "Computer, printer, scanner use maadtini.")
+    said = "Sai Cyber Centre alli 6 months part time kelsa maadide. Typing, printing, online forms fill maadtidde."
+    nb.add_turn("student", said)
+    assert nb.add_experience("Computer Operator", "Sai Cyber Centre", "6 months", said)["ok"]
+
+
+def test_no_fused_onto_a_kannada_verb_counts_as_no():
+    nb = CvNotebook()
+    nb.add_turn("student", "ಯಾವ ಕೆಲಸನೂ ಮಾಡಿಲ್ಲ.")  # "haven't done any work" - no separate "no" word
+    assert nb.mark_no_experience("ಯಾವ ಕೆಲಸನೂ ಮಾಡಿಲ್ಲ.")["ok"]
+
+
+def test_look_alike_telugu_letters_match_the_kannada_answer():
+    nb = CvNotebook()
+    nb.add_turn("student", "ನಮಸ್ಕಾರ, ನನ್ನ ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")
+    assert nb.student_said("నమಸ್ಕಾರ, ನನ್ನ ಹೆಸರು ಮಂಜುನಾಥ ಗೌಡ.")  # first letter is Telugu

@@ -203,6 +203,8 @@ def set_step(session_id: str, body: StepRequest, request: Request) -> dict[str, 
         raise HTTPException(400, "Unknown step.")
     if body.step == "export" and session.notebook.export_blockers():
         raise HTTPException(409, "; ".join(session.notebook.export_blockers()))
+    if body.step != session.step:
+        session.notices.append((f"(App notice, not the student: the student moved to the {body.step} screen.)", False))
     session.step = body.step
     return state(session)
 
@@ -277,6 +279,8 @@ def approve(session_id: str, request: Request) -> dict[str, Any]:
     if not result["ok"]:
         raise HTTPException(409, result["message"])
     session.step = "template"
+    # The voice agent doesn't see taps; without this it thought the CV wasn't ready (evaluation, vague design case).
+    session.notices.append(("(App notice, not the student: the student checked the CV and tapped Looks good. They are on the Style screen now. Help them pick a template and design.)", True))
     return state(session)
 
 
@@ -566,10 +570,22 @@ async def live_voice(websocket: WebSocket) -> None:
                     now = time.monotonic()
                     if now - started > LIVE_MAX_SECONDS:
                         return "The 10-minute voice session has ended. Your notebook is saved; tap the mic to continue."
+                    # Nobody talks while the draft is being written: that silence is not idleness.
+                    if session.drafting:
+                        activity["agent"] = now
                     if now - max(activity.values()) > LIVE_IDLE_SECONDS:
                         return "The voice session paused after a minute of silence. Tap the mic to continue."
 
-            tasks = [asyncio.create_task(c) for c in (from_browser(), from_gemini(), watchdog())]
+            async def relay_notices() -> None:
+                # Things the student did by tapping, so the voice agent knows the screen.
+                while True:
+                    await asyncio.sleep(1)
+                    while session.notices:
+                        text, speak = session.notices.pop(0)
+                        await live.send_client_content(turns=types.Content(role="user", parts=[types.Part(text=text)]),
+                                                       turn_complete=speak)
+
+            tasks = [asyncio.create_task(c) for c in (from_browser(), from_gemini(), watchdog(), relay_notices())]
             session.tasks.update(tasks)
             done, _ = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
             for task in done:

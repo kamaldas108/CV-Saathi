@@ -43,3 +43,8 @@ One line per change, with the requirement it serves.
 - 2026-10-20 — Fix: "urban companies" didn't match employer "Urban Company"; role from the trade was rejected; job gate then looped and asked the student to deny their job — F1, F5
 - 2026-10-20 — Cloud Run deployment: Dockerfile, deploy.sh, docs/deploy.md; max 5 simultaneous voice interviews; usage to logs — deployment, cost
 - 2026-10-20 — Fix: "anything else?" asked before certificates/languages (now must follow the languages answer); leaked markup ("### …", <Step …/>) shown in chat — F1
+- 2026-10-26 — Live evaluation, 7 scripted students (specs/03-eval-results.md): round 1 3/7 pass; fixes below; round 3 7/7 pass — eval
+- 2026-10-26 — Fix: normaliser stripped Indic vowel signs ("हाँ"→"ह"); Telugu look-alike letters; word-level quote match; Indic evidence fallback — F3, F5
+- 2026-10-26 — Fix: Kannada/Hindi number words; fused Kannada "no"; student's spelled letters win; role from any answer — F4, F5
+- 2026-10-26 — Fix: code fences and CJK stripped from speech; no idle cut-off while drafting; 429 retry; tap notices to the voice agent; named design options — F1, F7
+- 2026-11-06 — Evaluation round 4 (eval/RESULTS-round4.md): 24 cases × 2 runs, Set G 9/15 pass, gate not met; main fault: Indic evidence fallback admits unsupported lines — eval, F5
